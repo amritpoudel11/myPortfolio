@@ -1,0 +1,22 @@
+{
+  "name": "amritportfolio",
+  "version": "1.0.0",
+  "description": "amrit poudels portfolio version 1",
+  "main": "portfolio.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amritpoudel11/myPortfolio.git"
+  },
+  "author": "Amrit Poudel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amritpoudel11/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/amritpoudel11/myPortfolio#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
