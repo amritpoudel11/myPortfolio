@@ -19,6 +19,9 @@ body {
   align-items: center;
   padding-right: 1.4rem; }
 
+.nav-name {
+  color: #777; }
+
 .nav__header-1 {
   font-size: 2rem; }
 
@@ -34,4 +37,4 @@ body {
 
 .nav__icon {
   font-size: 3rem;
-  color: orangered; }
+  color: #777; }
