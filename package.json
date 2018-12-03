@@ -4,8 +4,8 @@
   "description": "amrit poudels portfolio version 1",
   "main": "portfolio.js",
   "scripts": {
-    "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver" :"live-server",
+    "watch:sass": "node-sass -w sass/main.scss css/style.css",
+    "devserver": "live-server",
     "start": "npm-run-all --parallel watch:sass devserver",
 
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
