@@ -12,3 +12,26 @@ html {
 body {
   box-sizing: border-box;
   padding: 3rem; }
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.4rem; }
+
+.nav__header-1 {
+  font-size: 2rem; }
+
+.nav__header-2 {
+  font-size: 1.5rem; }
+
+.nav-right {
+  display: none; }
+
+.nav__img {
+  height: 5rem;
+  width: 4.3rem; }
+
+.nav__icon {
+  font-size: 3rem;
+  color: orangered; }
