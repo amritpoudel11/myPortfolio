@@ -10,31 +10,45 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  box-sizing: border-box; }
 
-.nav-left {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 1.4rem; }
-
-.nav-name {
-  color: #777; }
-
-.nav__header-1 {
-  font-size: 2rem; }
-
-.nav__header-2 {
-  font-size: 1.5rem; }
-
-.nav-right {
+.toggle {
   display: none; }
 
-.nav__img {
-  height: 5rem;
-  width: 4.3rem; }
+.nav {
+  position: absolute;
+  z-index: 100;
+  background-image: linear-gradient(to right, rgba(247, 247, 247, 0.7), #d1d1d1);
+  width: 100%; }
+  .nav-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.4rem; }
+  .nav__img {
+    height: 5rem;
+    width: 4.3rem; }
+  .nav__icon {
+    font-size: 3rem;
+    color: #777; }
 
-.nav__icon {
-  font-size: 3rem;
+.hero-name {
   color: #777; }
+
+.hero__header-1 {
+  font-size: 2rem; }
+
+.hero__header-2 {
+  font-size: 1.5rem; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffb900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center; }
+  .header > * {
+    justify-self: center;
+    align-self: center; }

@@ -1,23 +1,16 @@
 .nav{
+    position: absolute;
+    z-index: 100;
+    background-image: linear-gradient(to right, rgba($color-grey-light-1 , 0.7), rgba($color-grey-light-2 , 1));
+    width: 100%;
+
     &-left{
         display: flex; 
         justify-content: space-between; 
         align-items: center;
        // border-bottom: 1px solid;   
         padding-right: 1.4rem; 
-    }
-    &-name{
-      color: $color-grey-dark;
-    }
-    
-    &__header-1{
-        font-size: 2rem;
-    }
-    &__header-2{
-        font-size: 1.5rem;
-    }
-    &-right{
-        display: none;
+      
     }
     &__img{
         height: 5rem;
@@ -27,4 +20,16 @@
         font-size: 3rem;
         color: $color-grey-dark;
     }
+}
+.hero{
+    &-name{
+        color: $color-grey-dark;
+      }
+      
+      &__header-1{
+          font-size: 2rem;
+      }
+      &__header-2{
+          font-size: 1.5rem;
+      }
 }
