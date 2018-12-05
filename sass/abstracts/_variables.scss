@@ -16,3 +16,18 @@ $color-grey-dark-3: #333;
 $default-font-size: 1.6rem;
 $main-font: 'Titillium Web', sans-serif;
 
+@keyframes rotateScale {
+    0% {
+      -webkit-transform: scale(2) rotateZ(0);
+              transform: scale(2) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(4) rotateZ(180deg);
+              transform: scale(4) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(2) rotateZ(360deg);
+              transform: scale(2) rotateZ(360deg);
+    }
+  }
+  
