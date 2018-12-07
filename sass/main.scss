@@ -1,11 +1,18 @@
 
 @import "abstracts/variables";
 
+@import "base/animation";
 @import "base/base";
+@import "base/typography";
 
 @import "components/button";
+@import "components/card";
+@import "components/form";
 @import "components/navbar";
 
+@import "layout/aboutme";
+@import "layout/footer";
+@import "layout/grid";
 @import "layout/header";
 
 
