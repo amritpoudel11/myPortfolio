@@ -9,8 +9,7 @@
         justify-content: space-between; 
         align-items: center;
        // border-bottom: 1px solid;   
-        padding-right: 1.4rem; 
-      
+        padding-right: 1.4rem;  
     }
     &__img{
         height: 5rem;
@@ -20,16 +19,4 @@
         font-size: 3rem;
         color: $color-grey-dark;
     }
-}
-.hero{
-    &-name{
-        color: $color-grey-dark;
-      }
-      
-      &__header-1{
-          font-size: 2rem;
-      }
-      &__header-2{
-          font-size: 1.5rem;
-      }
 }
