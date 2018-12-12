@@ -1,0 +1,8 @@
+.portfolio{
+    &__grid{
+     display: grid;
+     margin: 2rem auto;
+     grid-template-columns: 100%;
+     grid-gap: 2rem;
+    }
+}
