@@ -9,6 +9,17 @@
     -webkit-transform: scale(2) rotateZ(360deg);
     transform: scale(2) rotateZ(360deg); } }
 
+@keyframes background-grow {
+  0% {
+    width: 0; }
+  33% {
+    width: 35%; }
+  66% {
+    width: 10%; }
+  100% {
+    width: 35%;
+    opacity: 0.7; } }
+
 *,
 *::after,
 *::before {
@@ -48,6 +59,59 @@ body {
     .btn-header:hover {
       filter: brightness(1.2); }
 
+.card {
+  background-image: linear-gradient(130deg, rgba(163, 93, 255, 0.2) 50%, rgba(126, 49, 237, 0.5) 90%);
+  margin: 0 auto;
+  position: relative; }
+  .card__description {
+    padding-right: .5rem;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    display: none;
+    width: 0; }
+  .card:hover .card__description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    letter-spacing: .1rem;
+    background: linear-gradient(130deg, rgba(126, 49, 237, 0.5), rgba(163, 93, 255, 0.5));
+    height: 100%;
+    width: 100%;
+    color: #f7f7f7;
+    -webkit-clip-path: circle(60% at 100% 50%);
+    clip-path: circle(60% at 100% 50%); }
+  .card__description--head {
+    text-align: end;
+    font-size: 1rem;
+    color: #f7f7f7;
+    position: relative; }
+    .card__description--head::after {
+      display: block;
+      content: "";
+      background-color: #ffb900;
+      border-radius: 1rem;
+      height: 2rem;
+      width: .8rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -5;
+      transform: translateX(0.3rem);
+      transition: all .3s ease-in;
+      animation: background-grow 1s;
+      animation-fill-mode: forwards; }
+  .card__description--text {
+    text-align: end; }
+    .card__description--text span {
+      display: flex;
+      flex-direction: column;
+      align-content: flex-end; }
+  .card > img {
+    width: 80vw; }
+
 .nav {
   position: absolute;
   z-index: 100;
@@ -64,6 +128,12 @@ body {
   .nav__icon {
     font-size: 3rem;
     color: #f7f7f7; }
+
+.portfolio__grid {
+  display: grid;
+  margin: 2rem auto;
+  grid-template-columns: 100%;
+  grid-gap: 2rem; }
 
 .header {
   width: 100%;
