@@ -1,0 +1,68 @@
+.card{
+    background-image: linear-gradient(130deg, rgba($color-primary-light, 0.2) 50%, rgba($color-primary, 0.5) 90%);
+    margin: 0 auto;
+    position: relative;
+
+    &__description{
+        padding-right: .5rem;
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        top: 0;
+       display: none;
+       width: 0;  
+    }
+    &:hover &__description{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        letter-spacing: .1rem;
+        background: linear-gradient(130deg, rgba($color-primary, 0.5), rgba($color-primary-light, 0.5));
+        height: 100%;            
+        width: 100%;
+        color: $color-grey-light-1;
+        -webkit-clip-path: circle(60% at 100% 50%);
+        clip-path: circle(60% at 100% 50%);           
+    }
+
+    &__description--head{
+        text-align: end;
+        font-size: 1rem;
+        color: $color-grey-light-1;
+        position: relative;
+        
+
+        &::after{
+            display: block;
+            content:"";
+            background-color: $color-secondary-light;
+            border-radius: 1rem;
+            height: 2rem;
+            width: .8rem;
+            position: absolute;
+            top:0;
+            right: 0;
+            z-index: -5;
+           transform: translateX(.3rem);
+            transition: all .3s ease-in;
+            animation: background-grow 1s;
+            animation-fill-mode: forwards;              
+        }
+       
+
+    }
+    &__description--text{
+        text-align: end;
+        & span{
+            display: flex;
+            flex-direction: column;
+            align-content: flex-end;
+        }
+
+    }
+    &>img{
+        width: 80vw;
+    }
+    
+}
