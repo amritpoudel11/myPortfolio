@@ -1,7 +1,7 @@
 .nav{
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    background-image: linear-gradient(to right, rgba(transparent , 0.1), rgba(transparent , 0.4));
+    background-color: transparent;
     width: 100%;
 
     &-left{
@@ -17,6 +17,6 @@
     }
     &__icon{
         font-size: 3rem;
-        color: $color-grey-light-1;
+        color: $color-primary;
     }
 }
