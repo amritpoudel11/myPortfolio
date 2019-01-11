@@ -43,7 +43,7 @@ body {
   border-radius: .5rem;
   background-color: transparent;
   opacity: .6;
-  font-size: 2rem;
+  font-size: 2.2rem;
   text-transform: capitalize; }
   .btn-header {
     background-color: #ea9085;
@@ -52,15 +52,14 @@ body {
     color: #f7f7f7;
     outline: 3px solid #ea9085;
     outline-offset: 4px;
-    font-weight: 600; }
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s; }
     .btn-header:active {
-      transform: translate(-2px); }
+      filter: hue-rotate(45deg); }
     .btn-header:hover {
-      background-color: #f7f7f7;
-      color: #ea9085;
-      outline: 3px solid #f7f7f7;
-      outline-offset: 5px;
-      box-shadow: none; }
+      outline-offset: 8px;
+      transform: rotate(2deg); }
 
 .card {
   background-image: linear-gradient(130deg, rgba(163, 93, 255, 0.2) 50%, rgba(126, 49, 237, 0.5) 90%);
@@ -124,13 +123,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1.4rem; }
+    padding: 1rem 1.4rem; }
   .nav__img {
     height: 5rem;
     width: 4.3rem; }
   .nav__icon {
     font-size: 3rem;
     color: #7E31ED; }
+
+.aboutMe {
+  height: 95vh;
+  width: 100vw; }
 
 .portfolio__grid {
   display: grid;
@@ -152,14 +155,15 @@ body {
     align-self: center; }
 
 .heading-1 {
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   opacity: 1;
   text-shadow: 0 2px 0 #f7f7f7; }
 
 .heading-2 {
   font-size: 2.4rem;
   font-weight: 400;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  text-align: center; }
 
 .heading-3 {
   font-size: 2rem;
