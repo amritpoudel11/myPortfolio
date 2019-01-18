@@ -1,0 +1,64 @@
+.footer{
+    height: 25vh;
+    font-size: 2rem;
+    border-top: 2px solid $color-grey-dark;
+    background-color: $color-primary;
+    color: $color-grey-light-1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+   &__nav{
+        display: flex;
+        justify-content: space-evenly;
+
+        &>li{
+            list-style: none;            
+        }
+
+        &>li>a{
+            color: $color-grey-light-1;
+            &:active,
+            &:visited{
+                font-style: none;
+            } 
+            &:hover{
+             color: $color-tertiary-1;   
+            }     
+        }
+
+       
+     
+   }
+
+    &__social{
+        display: flex; 
+        justify-content: space-evenly;
+        &>div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &--github:hover{
+            color: #111;
+            transform: scale(1.2);
+        }
+        &--linkedin:hover{
+            color: #0077B5;
+            transform: scale(1.2);
+        }
+        &--twitter:hover{
+            color: #1DA1F2;
+            transform: scale(1.2);
+        }
+        &--facebook:hover{
+            color: rgb(84, 138, 245);
+            transform: scale(1.2);
+        }    
+    }
+    &__copy{
+        align-self: center;
+        font-size: 1.4rem;
+    }
+}
