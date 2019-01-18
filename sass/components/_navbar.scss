@@ -19,4 +19,27 @@
         font-size: 3rem;
         color: $color-primary;
     }
+    &-right{
+        font-size: 2rem;
+        font-weight: 600;
+        width: 130px;
+        border-radius: 5px;
+        float: right;
+       text-align: center;
+       align-self: auto;
+      
+        &>ul>li{
+            list-style: none; 
+            border: 2px solid $color-primary;
+            margin: 1rem 0;
+            background-color: rgba($color-tertiary-1, .6);      
+
+            &>a{
+            color: $color-primary;
+            text-decoration: none; 
+            padding: 2px 5px;                  
+            }
+        }
+
+    }
 }
