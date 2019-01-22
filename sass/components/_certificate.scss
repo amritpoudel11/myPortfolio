@@ -17,11 +17,6 @@
     height: 60vh;
     overflow: auto;
     text-align: center;
-    cursor: grab;
-    &:active{
-        cursor: grabbing;
-    }
-          
     & .certificate>img{ 
         width: 85%;
         height: 100%;
