@@ -1,5 +1,5 @@
 .footer{
-    height: 25vh;
+    height: 30vh;
     font-size: 2rem;
     border-top: 2px solid $color-grey-dark;
     background-color: $color-primary;
@@ -9,9 +9,19 @@
     flex-direction: column;
     justify-content: space-evenly;
 
+    &>.heading{
+        font-size: 1.2rem;
+        color: $color-grey-light-1;
+        text-align: center;
+        text-decoration: underline;
+    }
+
    &__nav{
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
+        font-size: 1.5rem;
+        text-align: center;
 
         &>li{
             list-style: none;            
@@ -33,6 +43,7 @@
    }
 
     &__social{
+        font-size: 1.3rem;
         display: flex; 
         justify-content: space-evenly;
         &>div{
