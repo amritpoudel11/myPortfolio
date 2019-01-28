@@ -59,9 +59,10 @@ body {
 .card {
   margin: 5%;
   text-align: center;
-  position: relative; }
+  position: relative;
+  color: #f7f7f7; }
   .card__description {
-    background-image: linear-gradient(130deg, rgba(163, 93, 255, 0.5) 50%, rgba(126, 49, 237, 0.8) 90%);
+    background-image: linear-gradient(130deg, rgba(163, 93, 255, 0.9) 50%, #7e31ed 90%);
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -70,15 +71,18 @@ body {
     overflow: hidden;
     transition: height .3s linear, border .1s linear; }
     .card__description--head {
-      font-size: 2rem;
+      font-size: 1.4rem;
+      text-transform: capitalize;
       color: #7E31ED;
       background-color: #f7f7f7;
       border-bottom: 1px solid #a35dff; }
     .card__description--text {
+      padding: .1rem;
       font-weight: 700;
-      font-size: 1.5em; }
+      font-size: 1rem; }
   .card > img {
-    width: 100%; }
+    width: 100%;
+    opacity: 0.9; }
   .card:hover .card__description {
     height: 10rem;
     border: 1px solid #a35dff; }
