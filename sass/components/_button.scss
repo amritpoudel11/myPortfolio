@@ -27,12 +27,13 @@
         }
     }
     &-contactMe{
-        background-color: #fff;
+        background-color: $color-grey-light-1;
         color: $color-primary;
         cursor: pointer;
+        opacity: 1;
         &:hover{
-            transform: translateY(-.3rem);
-            opacity: 1;
+            transform: translateY(-.2rem);
+            opacity: 0.9;
         }        
     }    
 }
