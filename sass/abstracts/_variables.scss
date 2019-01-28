@@ -15,3 +15,34 @@ $color-grey-dark-3: #333;
 
 $default-font-size: 1.6rem;
 $main-font: 'Titillium Web', sans-serif;
+
+
+// MEDIA QUERY MANAGER
+
+/* 
+0 - 600PX:  PHONE
+600 - 900PX TABLET POTRAIT
+900-1200    TABLET LANDSCAPE
+1200-1800   NOTEBOOK/DESKTOPS
+1800++      BIG DESKTOP
+*/
+
+// media queries order : BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
+
+// 1em == 16px;
+
+@mixin respond($break-point){
+    @if $break-point == phone{
+        @media only screen and (max-width: 37.5em){@content};   //600px
+    } 
+    @if $break-point == tab-port{
+        @media only screen and(max-width: 56.25em){@content};    //900px
+    }
+    @if $break-point == tab-land{
+        @media only screen and(max-width: 75em){@content};   //1200px
+    }  
+    @if $break-point == big-desktop{
+        @media only screen and(min-width: 112.5em){@content};   //1800++
+    }
+  
+}
