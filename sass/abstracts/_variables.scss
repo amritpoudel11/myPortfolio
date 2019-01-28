@@ -33,13 +33,13 @@ $main-font: 'Titillium Web', sans-serif;
 
 @mixin respond($break-point){
     @if $break-point == phone{
-        @media only screen and (max-width: 37.5em){@content};   //600px
+        @media only screen and (min-width: 37.5em){@content};   //600px
     } 
     @if $break-point == tab-port{
-        @media only screen and(max-width: 56.25em){@content};    //900px
+        @media only screen and(min-width: 56.25em){@content};    //900px
     }
     @if $break-point == tab-land{
-        @media only screen and(max-width: 75em){@content};   //1200px
+        @media only screen and(min-width: 75em){@content};   //1200px
     }  
     @if $break-point == big-desktop{
         @media only screen and(min-width: 112.5em){@content};   //1800++
