@@ -1,8 +1,15 @@
-.card{   
-    margin: 5%;
+.card{
     text-align: center;
     position: relative;
     color: $color-grey-light-1;
+    border: 2px solid $color-grey-dark;
+    padding: .3rem;
+    margin: .5rem 2rem;
+    
+
+    @include respond(tab-port){
+        margin: 0;
+    }
    
     &__description{
         background-image: linear-gradient(130deg, rgba($color-primary-light, 0.9) 50%, rgba($color-primary, 1) 90%);        
@@ -24,8 +31,8 @@
             @include respond(phone){
                 font-size: 2.5rem;
             }
-
         }
+
         &--text{
             padding: .1rem;          
             font-weight: 700;
@@ -41,6 +48,7 @@
         width: 100%;
         opacity: 0.9;     
     }
+    
     &:hover .card__description{
     height: 10rem;
     border: 1px solid $color-primary-light;

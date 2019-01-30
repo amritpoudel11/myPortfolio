@@ -17,9 +17,18 @@
     height: 60vh;
     overflow: auto;
     text-align: center;
-    & .certificate>img{ 
+
+    & .certificate{
+        &>img{ 
         width: 85%;
         height: 100%;
-        margin: .5rem auto; 
+        margin: .5rem auto;
+        @include respond(phone){
+            width: 65%;
+        }
+        @include respond(tab-port){
+            width: 50%;
+        }
+        }
     }
 }

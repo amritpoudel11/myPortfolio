@@ -1,8 +1,25 @@
 .portfolio{
+    margin: 2rem auto;
+    
+    @include respond(tab-port){
+        margin: 2rem 2rem;
+    }
+
+    &__heading{
+        font-size: 3rem;
+        font-weight: 800;
+        color: $color-grey-light-1;
+        background-color: $color-primary-light;
+        text-align: center;
+    }
     &__grid{
      display: grid;
      margin: 2rem auto;
      grid-template-columns: 100%;
-     grid-gap: 2rem;
+     grid-gap: .3rem;
+    
+     @include respond(tab-port){
+         grid-template-columns: 1fr 1fr;
+     }
     }
 }

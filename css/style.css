@@ -59,20 +59,24 @@ body {
     background-color: #f7f7f7;
     color: #7E31ED;
     cursor: pointer;
-    opacity: 1; }
-    @media only screen and (min-width: 37.5em) {
-      .btn-contactMe {
-        width: 50%;
-        align-self: center; } }
+    opacity: 1;
+    width: max-content;
+    min-height: min-content;
+    margin: 0 auto; }
     .btn-contactMe:hover {
       transform: translateY(-0.2rem);
       opacity: 0.9; }
 
 .card {
-  margin: 5%;
   text-align: center;
   position: relative;
-  color: #f7f7f7; }
+  color: #f7f7f7;
+  border: 2px solid #777;
+  padding: .3rem;
+  margin: .5rem 2rem; }
+  @media only screen and (min-width: 56.25em) {
+    .card {
+      margin: 0; } }
   .card__description {
     background-image: linear-gradient(130deg, rgba(163, 93, 255, 0.9) 50%, #7e31ed 90%);
     position: absolute;
@@ -131,6 +135,12 @@ body {
     width: 85%;
     height: 100%;
     margin: .5rem auto; }
+    @media only screen and (min-width: 37.5em) {
+      .certificates-list .certificate > img {
+        width: 65%; } }
+    @media only screen and (min-width: 56.25em) {
+      .certificates-list .certificate > img {
+        width: 50%; } }
 
 .nav {
   position: fixed;
@@ -174,22 +184,31 @@ body {
   justify-content: space-around;
   padding: 2rem 1rem 1rem 1rem;
   height: 100vh;
+  min-height: max-content;
   font-size: 1.5rem;
   text-align: justify; }
   @media only screen and (min-width: 37.5em) {
     .aboutMe {
-      font-size: 2rem;
-      padding: 2rem; } }
+      font-size: 1.6rem;
+      font-weight: 100;
+      padding: 2rem;
+      line-height: 3rem; } }
+  @media only screen and (min-width: 56.25em) {
+    .aboutMe {
+      font-size: 1.8rem;
+      padding: 3rem 2rem; } }
   .aboutMe > .heading-2 {
-    padding-bottom: .4rem;
-    border-bottom: 3px solid rgba(153, 153, 153, 0.5); }
+    text-decoration: underline;
+    padding-bottom: 0; }
     @media only screen and (min-width: 37.5em) {
       .aboutMe > .heading-2 {
         font-size: 3rem; } }
   .aboutMe__story {
     padding-top: 1.2rem;
-    padding-bottom: 2rem;
-    border-bottom: 3px solid rgba(153, 153, 153, 0.5); }
+    padding-bottom: 2rem; }
+    @media only screen and (min-width: 37.5em) {
+      .aboutMe__story p:not(:last-child) {
+        padding-bottom: 2rem; } }
   .aboutMe__img--profile {
     height: 10rem;
     float: left;
@@ -209,11 +228,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly; }
-  .footer > .heading {
-    font-size: 1.2rem;
-    color: #f7f7f7;
-    text-align: center;
-    text-decoration: underline; }
   .footer__nav {
     display: flex;
     flex-direction: column;
@@ -231,13 +245,21 @@ body {
         font-style: none; }
       .footer__nav > li > a:hover {
         color: #e9e2d0; }
+    .footer__nav > .heading {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #f7f7f7;
+      text-align: center;
+      text-decoration: underline; }
+    .footer__nav > p {
+      font-size: 1.5rem; }
   .footer__social {
     font-size: 1.3rem;
     display: flex;
     justify-content: space-evenly; }
     @media only screen and (min-width: 37.5em) {
       .footer__social {
-        font-size: 2rem; } }
+        font-size: 1.4rem; } }
     .footer__social > div {
       display: flex;
       flex-direction: column;
@@ -258,11 +280,25 @@ body {
     align-self: center;
     font-size: 1.4rem; }
 
-.portfolio__grid {
-  display: grid;
-  margin: 2rem auto;
-  grid-template-columns: 100%;
-  grid-gap: 2rem; }
+.portfolio {
+  margin: 2rem auto; }
+  @media only screen and (min-width: 56.25em) {
+    .portfolio {
+      margin: 2rem 2rem; } }
+  .portfolio__heading {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #f7f7f7;
+    background-color: #a35dff;
+    text-align: center; }
+  .portfolio__grid {
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: 100%;
+    grid-gap: .3rem; }
+    @media only screen and (min-width: 56.25em) {
+      .portfolio__grid {
+        grid-template-columns: 1fr 1fr; } }
 
 .hero {
   width: 100%;

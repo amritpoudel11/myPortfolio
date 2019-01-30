@@ -7,18 +7,24 @@
 
     padding: 2rem 1rem 1rem 1rem;
     height: 100vh;
+    min-height: max-content;
     font-size: 1.5rem;
     text-align: justify;
 
     @include respond(phone){
-        font-size: 2rem;
-        padding: 2rem;
+        font-size: 1.6rem;
+        font-weight: 100;
+        padding: 2rem;        
+        line-height: 3rem;
+    }
+    @include respond(tab-port){
+        font-size: 1.8rem;
+        padding: 3rem 2rem;
     }
     
     &>.heading-2{
-        padding-bottom: .4rem;
-        border-bottom:  3px solid rgba($color-grey-dark-2, .5);
-
+        text-decoration: underline;
+        padding-bottom: 0;
         @include respond(phone){
             font-size: 3rem;
         }
@@ -27,7 +33,12 @@
     &__story{
         padding-top: 1.2rem;
         padding-bottom: 2rem;
-        border-bottom: 3px solid rgba($color-grey-dark-2, .5);
+
+        @include respond(phone){
+        & p:not(:last-child){
+            padding-bottom: 2rem;
+        }
+    }
     }
 
     &__img--profile{

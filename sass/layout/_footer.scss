@@ -9,13 +9,6 @@
     flex-direction: column;
     justify-content: space-evenly;
 
-    &>.heading{
-        font-size: 1.2rem;
-        color: $color-grey-light-1;
-        text-align: center;
-        text-decoration: underline;
-    }
-
    &__nav{
         display: flex;
         flex-direction: column;
@@ -41,7 +34,16 @@
             }     
         }
 
-       
+        &>.heading{
+            font-size: 2rem;
+            font-weight: 500;
+            color: $color-grey-light-1;
+            text-align: center;
+            text-decoration: underline;
+        } 
+        &>p{
+            font-size: 1.5rem;  
+        }  
      
    }
 
@@ -51,7 +53,7 @@
         justify-content: space-evenly;
 
         @include respond(phone){
-            font-size: 2rem;
+            font-size: 1.4rem;
         }
 
         &>div{
