@@ -31,12 +31,10 @@
         color: $color-primary;
         cursor: pointer;
         opacity: 1;
-
-        @include respond(phone){
-            width: 50%;
-            align-self: center;
-        }
-
+        width: max-content;
+        min-height: min-content;
+        margin: 0 auto;
+        
         &:hover{
             transform: translateY(-.2rem);
             opacity: 0.9;
