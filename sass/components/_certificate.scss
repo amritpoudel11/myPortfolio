@@ -1,16 +1,13 @@
 .certificate-box{
     margin-top: 8vh;   
     text-align: center;
+    background-color: grey;
    &__heading{
-        margin-left: 5rem;
-        margin-right: 5rem; 
         margin-bottom: 2vh;
         color: $color-primary;
         text-transform: uppercase;
         font-size: 2rem;
-        background-color: $color-grey-light-1;
-        border-top: 4px solid $color-grey-light-2;
-        border-bottom: 4px solid $color-grey-light-2;
+        text-shadow: -1px 1px $color-grey-dark-2;
    }
 }
 .certificates-list{
@@ -20,15 +17,11 @@
 
     & .certificate{
         &>img{ 
-        width: 85%;
-        height: 100%;
+        width: 60%;
+        max-width: 640px;
+        
+        height: auto;
         margin: .5rem auto;
-        @include respond(phone){
-            width: 65%;
-        }
-        @include respond(tab-port){
-            width: 50%;
-        }
         }
     }
 }
