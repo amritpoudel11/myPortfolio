@@ -1,7 +1,6 @@
 .certificate-box{
     margin-top: 8vh;   
     text-align: center;
-    background-color: grey;
    &__heading{
         margin-bottom: 2vh;
         color: $color-primary;
@@ -18,8 +17,7 @@
     & .certificate{
         &>img{ 
         width: 60%;
-        max-width: 640px;
-        
+        max-width: 640px;        
         height: auto;
         margin: .5rem auto;
         }

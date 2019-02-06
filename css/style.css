@@ -114,8 +114,7 @@ body {
 
 .certificate-box {
   margin-top: 8vh;
-  text-align: center;
-  background-color: grey; }
+  text-align: center; }
   .certificate-box__heading {
     margin-bottom: 2vh;
     color: #7E31ED;
