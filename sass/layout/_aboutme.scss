@@ -24,7 +24,6 @@
     }
     
     &>.heading-2{
-        text-decoration: underline;
         padding-bottom: 0;
         @include respond(phone){
             font-size: 3rem;

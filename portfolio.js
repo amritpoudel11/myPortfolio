@@ -7,6 +7,7 @@ const navBar = document.querySelector(".nav__left");
 const aboutMe = document.querySelector(".aboutMe");
 const certificateBox = document.querySelector(".certificate-box");
 const footer = document.querySelector(".footer");
+const portfolio = document.querySelector(".portfolio");
 
 //navBar
 navIcon.addEventListener("click", ()=>{
@@ -29,3 +30,17 @@ const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clie
  }
 }
 
+//
+const portfolioLink = document.querySelector(".nav__list--portfolio");
+const aboutLink = document.querySelector(".nav__list--about");
+const certificateLink = document.querySelector(".nav__list--certificate");
+
+portfolioLink.addEventListener("click", function(){
+    portfolio.scrollIntoView();
+});
+aboutLink.addEventListener("click", function(){
+    aboutMe.scrollIntoView();
+});
+certificateLink.addEventListener("click", function(){
+    certificateBox.scrollIntoView();
+});

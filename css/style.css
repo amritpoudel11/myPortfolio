@@ -160,11 +160,9 @@ body {
       list-style: none;
       border: 2px solid #7E31ED;
       margin: 1rem 0;
-      background-color: rgba(233, 226, 208, 0.6); }
-      .nav-right > ul > li > a {
-        color: #7E31ED;
-        text-decoration: none;
-        padding: 2px 5px; }
+      background-color: rgba(233, 226, 208, 0.6);
+      color: #7E31ED;
+      cursor: pointer; }
 
 .aboutMe {
   background-color: #7E31ED;
@@ -188,7 +186,6 @@ body {
       font-size: 1.8rem;
       padding: 3rem 2rem; } }
   .aboutMe > .heading-2 {
-    text-decoration: underline;
     padding-bottom: 0; }
     @media only screen and (min-width: 37.5em) {
       .aboutMe > .heading-2 {
