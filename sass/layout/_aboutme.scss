@@ -3,13 +3,14 @@
     color: $color-grey-light-1;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
     padding: 2rem 1rem 1rem 1rem;
     height: 100vh;
     min-height: max-content;
     font-size: 1.5rem;
     text-align: justify;
+    position: relative;
     
 
     @include respond(phone){
@@ -19,12 +20,13 @@
         line-height: 3rem;
     }
     @include respond(tab-port){
-        font-size: 1.8rem;
+        
         padding: 3rem 2rem;
     }
     
     &>.heading-2{
         padding-bottom: 0;
+        font-weight: 800;
         @include respond(phone){
             font-size: 3rem;
         }
@@ -35,10 +37,24 @@
         padding-bottom: 2rem;
 
         @include respond(phone){
-        & p:not(:last-child){
-            padding-bottom: 2rem;
+            & div p:not(:last-child){
+                padding-bottom: 2rem;
+            }
         }
-    }
+        @include respond(tab-port){
+            & div{
+                padding-right: 5rem;
+            }
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        & div p span{
+            background-color: rgba($color-tertiary-2, .5);
+            font-weight: 400;
+        }
+        
     }
 
     &__img--profile{
@@ -51,6 +67,29 @@
         @include respond(phone){
             height: 24rem;
         }
+        @include respond(tab-port){
+            width: 350px;
+            height: auto;
+            margin-right: 8rem;
+        }
+    }
+
+    &__contact{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        height: 9vh;
+        width: 100%;
+        background-color: $color-primary-light;
+        text-align: center;
+        align-self: center;
+        padding-top: 1.5rem;
+        font-weight: 600;
+        & span{
+            display: inline-block;
+            
+        }
+        
     }
 }
 

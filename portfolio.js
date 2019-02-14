@@ -30,7 +30,13 @@ const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clie
  }
 }
 
-// ** Portfolio Area **
+//** Hero Scroll About Button */
+const btnHeader = document.querySelector(".btn-header");
+btnHeader.addEventListener("click", function(){
+    aboutMe.scrollIntoView();
+});
+
+// ** navigation link Area **
 const portfolioLink = document.querySelector(".nav__list--portfolio");
 const aboutLink = document.querySelector(".nav__list--about");
 const certificateLink = document.querySelector(".nav__list--certificate");

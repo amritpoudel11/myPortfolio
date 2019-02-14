@@ -55,21 +55,11 @@ html {
     font-weight: 600;
     cursor: pointer;
     transition: all .3s; }
-    .btn-header:active {
-      filter: hue-rotate(45deg); }
     .btn-header:hover {
       outline-offset: 8px;
       transform: rotate(2deg); }
-  .btn-contactMe {
-    background-color: #f7f7f7;
-    color: #7E31ED;
-    cursor: pointer;
-    opacity: 1;
-    width: max-content;
-    margin: 0 auto; }
-    .btn-contactMe:hover {
-      transform: translateY(-0.2rem);
-      opacity: 0.9; }
+    .btn-header:active {
+      outline-offset: 2px; }
 
 .card {
   text-align: center;
@@ -215,12 +205,13 @@ html {
   color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 2rem 1rem 1rem 1rem;
   height: 100vh;
   min-height: max-content;
   font-size: 1.5rem;
-  text-align: justify; }
+  text-align: justify;
+  position: relative; }
   @media only screen and (min-width: 37.5em) {
     .aboutMe {
       font-size: 1.6rem;
@@ -229,10 +220,10 @@ html {
       line-height: 3rem; } }
   @media only screen and (min-width: 56.25em) {
     .aboutMe {
-      font-size: 1.8rem;
       padding: 3rem 2rem; } }
   .aboutMe > .heading-2 {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    font-weight: 800; }
     @media only screen and (min-width: 37.5em) {
       .aboutMe > .heading-2 {
         font-size: 3rem; } }
@@ -240,8 +231,18 @@ html {
     padding-top: 1.2rem;
     padding-bottom: 2rem; }
     @media only screen and (min-width: 37.5em) {
-      .aboutMe__story p:not(:last-child) {
+      .aboutMe__story div p:not(:last-child) {
         padding-bottom: 2rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .aboutMe__story {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .aboutMe__story div {
+          padding-right: 5rem; } }
+    .aboutMe__story div p span {
+      background-color: rgba(238, 101, 83, 0.5);
+      font-weight: 400; }
   .aboutMe__img--profile {
     height: 20rem;
     float: left;
@@ -251,9 +252,27 @@ html {
     @media only screen and (min-width: 37.5em) {
       .aboutMe__img--profile {
         height: 24rem; } }
+    @media only screen and (min-width: 56.25em) {
+      .aboutMe__img--profile {
+        width: 350px;
+        height: auto;
+        margin-right: 8rem; } }
+  .aboutMe__contact {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 9vh;
+    width: 100%;
+    background-color: #a35dff;
+    text-align: center;
+    align-self: center;
+    padding-top: 1.5rem;
+    font-weight: 600; }
+    .aboutMe__contact span {
+      display: inline-block; }
 
 .footer {
-  height: 25vh;
+  height: 30vh;
   font-size: 2rem;
   border-top: 2px solid #777;
   background-color: #7E31ED;
