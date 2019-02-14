@@ -9,7 +9,7 @@ const certificateBox = document.querySelector(".certificate-box");
 const footer = document.querySelector(".footer");
 const portfolio = document.querySelector(".portfolio");
 
-//navBar
+//**** */navBar**
 navIcon.addEventListener("click", ()=>{
     navList.classList.toggle("toggle");
 });
@@ -30,7 +30,7 @@ const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clie
  }
 }
 
-//
+// ** Portfolio Area **
 const portfolioLink = document.querySelector(".nav__list--portfolio");
 const aboutLink = document.querySelector(".nav__list--about");
 const certificateLink = document.querySelector(".nav__list--certificate");
@@ -44,3 +44,25 @@ aboutLink.addEventListener("click", function(){
 certificateLink.addEventListener("click", function(){
     certificateBox.scrollIntoView();
 });
+
+//*** Certificates****
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("certificate");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  slides[slideIndex-1].style.display = "block";
+}

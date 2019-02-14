@@ -12,4 +12,9 @@
               transform: scale(2) rotateZ(360deg);
     }
   } 
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
   
