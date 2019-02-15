@@ -43,12 +43,15 @@ const certificateLink = document.querySelector(".nav__list--certificate");
 
 portfolioLink.addEventListener("click", function(){
     portfolio.scrollIntoView();
+    navList.classList.toggle("toggle");
 });
 aboutLink.addEventListener("click", function(){
     aboutMe.scrollIntoView();
+    navList.classList.toggle("toggle");
 });
 certificateLink.addEventListener("click", function(){
     certificateBox.scrollIntoView();
+    navList.classList.toggle("toggle");
 });
 
 //*** Certificates****
