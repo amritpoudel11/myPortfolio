@@ -11,9 +11,24 @@
        // border-bottom: 1px solid;   
         padding: 1rem 1.4rem;  
     }
+    &__logo{
+        display: flex;
+        text-decoration: none;
+    }
     &__img{
         height: 5rem;
         width: 4.3rem;
+    }
+    &__header{
+        font-size: 2rem;
+        $color: $color-tertiary-1;
+        padding-left: 1rem;
+        transform: translateY(-.5rem);
+        color:$color-primary;
+        transition: all 1s;
+        & h6{
+            line-height: 1rem;
+        }
     }
     &__icon{
         font-size: 3rem;
@@ -21,21 +36,22 @@
     }
     &-right{
         font-size: 2rem;
-        font-weight: 600;
         width: 130px;
-        border-radius: 5px;
         float: right;
-       text-align: center;
-       align-self: auto;
-      
+        text-align: center;
+        align-self: center;
+        
+        
         &>ul>li{
             list-style: none; 
-            border: 2px solid $color-primary;
+            font-weight: 600;
+            border-bottom: 1px solid $color-grey-light-2;
+            border-radius: 5px;
             margin: 1rem 0;
-            background-color: rgba($color-tertiary-1, .6);      
-            color: $color-primary;
+            background-color: $color-grey-dark-3;      
+            color: $color-grey-light-1;
             cursor: pointer;
+           
         }
-
     }
 }

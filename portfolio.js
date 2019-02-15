@@ -3,6 +3,7 @@ const navIcon = document.querySelector(".nav__icon");
 const navList = document.querySelector(".nav__list");
 const navImage = document.querySelector(".nav__img");
 const navBar = document.querySelector(".nav__left");
+const navHeader = document.querySelector(".nav__header");
 
 const aboutMe = document.querySelector(".aboutMe");
 const certificateBox = document.querySelector(".certificate-box");
@@ -19,6 +20,7 @@ window.onscroll =function(e){
 const scrolled = window.scrollY;
 const scrollAboutMe = document.documentElement.scrollHeight - (aboutMe.clientHeight + window.innerHeight + 70);
 const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clientHeight + footer.clientHeight + 75);
+//const scrollNav = window.navBar.innerHeight;
 
  if(scrolled >= scrollAboutMe && scrolled < scrollAfter){
      navIcon.style.color = "#b1b1b1";
@@ -28,6 +30,14 @@ const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clie
     navIcon.style.color = "#7E31ED";
     navImage.setAttribute('src', 'resources/logopurple.png');
  }
+
+ // hiding nav-header on scroll
+
+if(scrolled > 100){
+    navHeader.style.color = "transparent";
+}else{
+    navHeader.style.color = "#7E31ED";
+}
 }
 
 //** Hero Scroll About Button */
