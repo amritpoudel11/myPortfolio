@@ -111,27 +111,27 @@ html {
     overflow: hidden;
     transition: height .3s linear, border .1s linear; }
     .card__description--head {
-      font-size: 2.2rem;
+      font-size: 1.5rem;
       text-transform: capitalize;
       color: #7E31ED;
       background-color: #f7f7f7;
       border-bottom: 1px solid #af78fc; }
-      @media only screen and (min-width: 56.25em) {
+      @media only screen and (min-width: 37.5em) {
         .card__description--head {
           font-size: 1.7rem; } }
       @media only screen and (min-width: 75em) {
         .card__description--head {
-          font-size: 2.2rem; } }
+          font-size: 2rem; } }
     .card__description--text {
       padding: .1rem;
       font-weight: 700;
-      font-size: 2rem; }
-      @media only screen and (min-width: 56.25em) {
+      font-size: 1.3rem; }
+      @media only screen and (min-width: 37.5em) {
         .card__description--text {
           font-size: 1.5rem; } }
       @media only screen and (min-width: 75em) {
         .card__description--text {
-          font-size: 2rem; } }
+          font-size: 1.7rem; } }
   .card > img {
     width: 100%;
     height: auto;
