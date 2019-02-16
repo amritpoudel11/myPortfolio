@@ -20,7 +20,9 @@
         max-height: min-content;
         overflow: hidden; 
         transition: height .3s linear, border .1s linear;        
-       
+        & a{
+            text-decoration: none;
+        }
         &--head{
             font-size: 1.5rem;
             text-transform: capitalize;

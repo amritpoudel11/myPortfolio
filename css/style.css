@@ -110,6 +110,8 @@ html {
     max-height: min-content;
     overflow: hidden;
     transition: height .3s linear, border .1s linear; }
+    .card__description a {
+      text-decoration: none; }
     .card__description--head {
       font-size: 1.5rem;
       text-transform: capitalize;
@@ -305,8 +307,15 @@ html {
     .aboutMe__story div p span {
       background-color: rgba(255, 89, 89, 0.5);
       font-weight: 400; }
+  @media only screen and (min-width: 75em) {
+    .aboutMe__paras {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-between; }
+      .aboutMe__paras p:last-child {
+        padding-left: 10rem; } }
   .aboutMe__img--profile {
-    height: 20rem;
+    height: 14rem;
     float: left;
     margin-right: 1.5rem;
     border: 4px solid #999;

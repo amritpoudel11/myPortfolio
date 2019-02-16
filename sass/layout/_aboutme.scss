@@ -59,8 +59,20 @@
         
     }
 
+    &__paras{
+        @include respond(tab-land){
+            font-size: 1.8rem;
+            & p:last-child{
+                padding-left: 10rem;
+            }
+            
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
     &__img--profile{
-        height: 20rem;
+        height: 14rem;
         float: left;
         margin-right: 1.5rem;        
         border: 4px solid $color-grey-dark-2;
