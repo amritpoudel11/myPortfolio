@@ -116,16 +116,22 @@ html {
       color: #7E31ED;
       background-color: #f7f7f7;
       border-bottom: 1px solid #af78fc; }
-      @media only screen and (min-width: 37.5em) {
+      @media only screen and (min-width: 56.25em) {
         .card__description--head {
-          font-size: 1.5rem; } }
+          font-size: 1.7rem; } }
+      @media only screen and (min-width: 75em) {
+        .card__description--head {
+          font-size: 2.2rem; } }
     .card__description--text {
       padding: .1rem;
       font-weight: 700;
       font-size: 2rem; }
-      @media only screen and (min-width: 37.5em) {
+      @media only screen and (min-width: 56.25em) {
         .card__description--text {
-          font-size: 1.2rem; } }
+          font-size: 1.5rem; } }
+      @media only screen and (min-width: 75em) {
+        .card__description--text {
+          font-size: 2rem; } }
   .card > img {
     width: 100%;
     height: auto;
@@ -363,7 +369,6 @@ html {
 
 .portfolio {
   margin: 2rem auto;
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -385,11 +390,11 @@ html {
     margin: 2rem auto;
     grid-template-columns: 100%;
     grid-gap: 1rem; }
-    @media only screen and (min-width: 37.5em) {
+    @media only screen and (min-width: 56.25em) {
       .portfolio__grid {
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem; } }
-    @media only screen and (min-width: 56.25em) {
+    @media only screen and (min-width: 75em) {
       .portfolio__grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 2.4rem; } }
