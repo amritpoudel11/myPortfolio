@@ -1,87 +1,40 @@
 .footer{
-    height: 30vh;
+    height: 20vh;
     font-size: 2rem;
     border-top: 2px solid $color-grey-dark;
-    background-color: $color-primary;
+    background-color: $color-secondary;
     color: $color-grey-light-1;
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;     
 
-   &__nav{
+    &__connection{
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        font-size: 1.5rem;
-        text-align: center;
-        @include respond(phone){
-            font-size: 1.8rem;
+        align-self: center;
+        & p{
+            font-size: 1.2rem;
+            margin: 0 auto;
+            @include respond(phone){
+                font-size: 1.5rem;
+            }
+            @include respond(tab-port){
+                font-size: 2rem;
+            }
         }
-
-        &>li{
-            list-style: none;            
-        }
-
-        &>li>a{
-            color: $color-grey-light-1;
-            &:active,
-            &:visited{
-                font-style: none;
-            } 
-            &:hover{
-             color: $color-tertiary-1;   
-            }     
-        }
-
-        &>.heading{
+        & .social{
             font-size: 2rem;
-            font-weight: 500;
-            color: $color-grey-light-1;
-            text-align: center;
-            text-decoration: underline;
-        } 
-        &>p{
-            font-size: 1.5rem;  
-        }  
-     
-   }
-
-    &__social{
-        font-size: 1.3rem;
-        display: flex; 
-        justify-content: space-evenly;
-
-        @include respond(phone){
-            font-size: 1.4rem;
+            @include respond(phone){
+                font-size: 3rem;
+            }
+            @include respond(tab-port){
+                font-size: 3.3rem;
+            }
         }
-
-        &>div{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        &--github:hover{
-            color: #111;
-            transform: scale(1.2);
-        }
-        &--linkedin:hover{
-            color: #0077B5;
-            transform: scale(1.2);
-        }
-        &--twitter:hover{
-            color: #1DA1F2;
-            transform: scale(1.2);
-        }
-        &--facebook:hover{
-            color: rgb(84, 138, 245);
-            transform: scale(1.2);
-        }    
     }
     &__copy{
         align-self: center;
-        text-align: center;
-        
+        text-align: center;        
         font-size: 1.4rem;
     }
 }

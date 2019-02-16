@@ -33,14 +33,14 @@
     &__icon{
         font-size: 3rem;
         color: $color-primary;
+        cursor: pointer;
     }
     &-right{
         font-size: 2rem;
         width: 130px;
         float: right;
         text-align: center;
-        align-self: center;
-        
+        align-self: center;        
         
         &>ul>li{
             list-style: none; 

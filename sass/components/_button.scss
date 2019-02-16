@@ -5,26 +5,69 @@
     opacity: .7;
     font-size: 2.2rem;
     text-transform: capitalize;
+    width: max-content;
 
     
     &-header{
         background-color: $color-tertiary-2;
         border: none;
+        margin-bottom: 10rem;
         opacity: 1;
-        color: $color-grey-light-1;
-        outline: 3px solid $color-tertiary-2;
-        outline-offset: 4px;
+        color: $color-secondary;
         font-weight: 600;
         cursor: pointer;
         transition: all .3s;
         
         &:hover{
-            outline-offset: 8px;
-            transform: rotate(2deg);
+            transform: scale(1.1);
         }
         &:active{
-            outline-offset: 2px;
+            transform: scale(0.9);
+        }
+    }
+
+    &__contactMe{
+        color: $color-secondary;
+        background-color: $color-grey-light-1;
+        margin: 0 auto;
+        transition: transform .3s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+        &:active{
+            transform: scale(1.05);
+        }
+        &:focus{
+            outline: none;           
         }
     }
 }
+.social{
+    display: flex;
+    letter-spacing: 10px;
+    font-size: 3.5rem;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+ 
+
+    &--github:hover{
+        color: #111;
+        transform: translateY(-.2rem);
+    }
+    &--linkedin:hover{
+        color: #0077B5;
+        transform: translateY(-.2rem);
+    }
+    &--twitter:hover{
+        color: #1DA1F2;
+        transform: translateY(-.2rem);
+    }
+    &--facebook:hover{
+        color: #4267B2;
+        transform: translateY(-.2rem);
+    }
+}
+
 

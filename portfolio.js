@@ -9,6 +9,7 @@ const aboutMe = document.querySelector(".aboutMe");
 const certificateBox = document.querySelector(".certificate-box");
 const footer = document.querySelector(".footer");
 const portfolio = document.querySelector(".portfolio");
+const home = document.querySelector("#Home");
 
 //**** */navBar**
 navIcon.addEventListener("click", ()=>{
@@ -47,10 +48,15 @@ btnHeader.addEventListener("click", function(){
 });
 
 // ** navigation link Area **
+const homeLink = document.querySelector(".nav__list--home");
 const portfolioLink = document.querySelector(".nav__list--portfolio");
 const aboutLink = document.querySelector(".nav__list--about");
 const certificateLink = document.querySelector(".nav__list--certificate");
 
+homeLink.addEventListener("click", function(){
+    home.scrollIntoView();
+   navList.classList.toggle("toggle");
+});
 portfolioLink.addEventListener("click", function(){
     portfolio.scrollIntoView();
     navList.classList.toggle("toggle");
