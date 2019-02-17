@@ -77,6 +77,12 @@ html {
   font-size: 3.5rem;
   justify-content: center;
   align-content: center; }
+  .social div a {
+    color: inherit;
+    text-decoration: none; }
+  .social div a:hover {
+    text-decoration: none;
+    cursor: pointer; }
   .social--github:hover {
     color: #111;
     transform: translateY(-0.2rem); }
