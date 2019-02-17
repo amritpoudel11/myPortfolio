@@ -19,8 +19,8 @@ navIcon.addEventListener("click", ()=>{
 //navbar scroll Event
 window.onscroll =function(e){
 const scrolled = window.scrollY;
-const scrollAboutMe = document.documentElement.scrollHeight - (aboutMe.clientHeight + window.innerHeight + 70);
-const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clientHeight + footer.clientHeight + 75);
+const scrollAboutMe = document.documentElement.scrollHeight - (aboutMe.clientHeight + window.innerHeight + 40);
+const scrollAfter = document.documentElement.scrollHeight - (certificateBox.clientHeight + footer.clientHeight + 40);
 //const scrollNav = window.navBar.innerHeight;
 
  if(scrolled >= scrollAboutMe && scrolled < scrollAfter){
