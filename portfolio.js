@@ -94,9 +94,19 @@ function showSlides(n) {
 
 //***popup message box */
 const contactClick = document.querySelector(".click-contact");
-const popupClose = document.querySelector(".popUp__close");
+const popupClose = document.querySelectorAll(".popUp__close");
 const popUp = document.querySelector(".popUp");
+const popupForm = document.querySelector(".popUp__form");
 const navContact = document.querySelector(".nav__list--contact");
+
+const sendBtn = document.querySelector(".btn-message");
+const thankyou = document.querySelector(".thankyou");
+const btnReturn = document.querySelector(".btn-return");
+
+const inputEmail= document.querySelector('#email');
+const inputMessage= document.querySelector('#message');
+
+
 
 contactClick.addEventListener("click", function(){
     popUp.style.display = "block";
@@ -105,6 +115,21 @@ navContact.addEventListener("click", function(){
     popUp.style.display = "block";
     navList.classList.toggle("toggle");
 });
-popupClose.addEventListener("click", function(){
-    popUp.style.display = "none";    
+popupClose.forEach(function(e){
+    e.addEventListener("click", function(){
+        popUp.style.display = "none";   
+    })
+})
+
+//form handling
+// check if form is valid
+
+sendBtn.addEventListener("click", function(){
+    if(inputEmail.validity.valid && inputMessage.validity.valid){
+    popupForm.style.display = "none";
+    thankyou.style.display = "flex";
+    }
+})
+btnReturn.addEventListener("click", function(){
+    popUp.style.display = "none";
 })
