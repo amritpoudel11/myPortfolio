@@ -91,3 +91,20 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
 }
+
+//***popup message box */
+const contactClick = document.querySelector(".click-contact");
+const popupClose = document.querySelector(".popUp__close");
+const popUp = document.querySelector(".popUp");
+const navContact = document.querySelector(".nav__list--contact");
+
+contactClick.addEventListener("click", function(){
+    popUp.style.display = "block";
+});
+navContact.addEventListener("click", function(){
+    popUp.style.display = "block";
+    navList.classList.toggle("toggle");
+});
+popupClose.addEventListener("click", function(){
+    popUp.style.display = "none";    
+})

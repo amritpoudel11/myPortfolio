@@ -35,6 +35,7 @@
                         <li class="nav__list--portfolio">Portfolio</li>
                         <li class="nav__list--about">About Me</li>                        
                         <li class="nav__list--certificate">Cerificates</li>
+                        <li class="nav__list--contact">Contact</li>
                     </ul>
                 </div>
             </nav>
@@ -135,7 +136,7 @@
                         </p>
                     </div>
                 </div>
-                    <button class="btn btn__contactMe">Contact Me</button>
+                    <button class="btn btn__contactMe click-contact">Contact Me</button>
             </section>
             <section class="certificate-box">           
                 <h2 class="certificate-box__heading">Some of my Certificates</h2>
@@ -190,7 +191,23 @@
                     <p>&copy; Amrit Poudel,  Lisbon, Portugal, 2019.</p>
                 </div>
             </section>
-        </div>      
+        </div>
+        <div class="popUp">
+            <form action="get" class="popUp__form" id="contact-form">
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Your Email" class="form-inputs" id="email" required>
+                </p>
+                <p>
+                    <label for="message">Message:</label>
+                    <textarea name="message" rows="10" class="form-inputs" id="message" required></textarea>
+                </p>
+                <p>
+                    <button class="btn btn-message" type="submit">Send</button>
+                </p>
+                <span class="popUp__close">x</span>
+            </form>
+        </div>   
         <script src="portfolio.js" async defer></script>
     </body>
 </html>
