@@ -13,8 +13,8 @@
         margin-bottom: 10rem;
         opacity: 1;
         color: $color-grey-light-1;
-        background-color: $color-primary;
-        font-weight: 600;
+        background-color: rgba($color-primary, .6);
+        font-weight: 500;
         transition: all .3s;
         outline: 3px solid rgba($color-grey-light-1, .7);
         outline-offset: .5rem;

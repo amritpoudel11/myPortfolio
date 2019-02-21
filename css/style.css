@@ -60,8 +60,8 @@ html {
     margin-bottom: 10rem;
     opacity: 1;
     color: #f7f7f7;
-    background-color: #7E31ED;
-    font-weight: 600;
+    background-color: rgba(126, 49, 237, 0.6);
+    font-weight: 500;
     transition: all .3s;
     outline: 3px solid rgba(247, 247, 247, 0.7);
     outline-offset: .5rem; }
