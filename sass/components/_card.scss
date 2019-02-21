@@ -2,9 +2,9 @@
     text-align: center;
     position: relative;
     color: $color-grey-light-1;
-    border: 2px solid $color-grey-dark;
     padding: .3rem;
     margin: .5rem 2rem;
+    align-self: center;
     
 
     @include respond(tab-port){

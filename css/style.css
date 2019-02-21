@@ -46,6 +46,9 @@ html {
 .toggle {
   display: none; }
 
+body {
+  background-color: rgba(153, 153, 153, 0.8); }
+
 .btn {
   padding: 1rem 2rem;
   border: 2px solid rgba(0, 0, 0, 0.5);
@@ -113,9 +116,9 @@ html {
   text-align: center;
   position: relative;
   color: #f7f7f7;
-  border: 2px solid #777;
   padding: .3rem;
-  margin: .5rem 2rem; }
+  margin: .5rem 2rem;
+  align-self: center; }
   @media only screen and (min-width: 56.25em) {
     .card {
       margin: 0; } }
