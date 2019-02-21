@@ -62,23 +62,24 @@
     
     & div a:hover{
         text-decoration:none;
-        cursor:pointer;  
+        cursor:pointer; 
+       transition: transfrom .3s; 
     }
     &--github:hover{
         color: #111;
-        transform: translateY(-.2rem);
+        transform: translateY(-.4rem);
     }
     &--linkedin:hover{
         color: #0077B5;
-        transform: translateY(-.2rem);
+        transform: translateY(-.4rem);
     }
     &--twitter:hover{
         color: #1DA1F2;
-        transform: translateY(-.2rem);
+        transform: translateY(-.4rem);
     }
     &--facebook:hover{
         color: #4267B2;
-        transform: translateY(-.2rem);
+        transform: translateY(-.4rem);
     }
 }
 

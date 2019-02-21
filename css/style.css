@@ -98,19 +98,20 @@ body {
     filter: contrast(200%); }
   .social div a:hover {
     text-decoration: none;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: transfrom .3s; }
   .social--github:hover {
     color: #111;
-    transform: translateY(-0.2rem); }
+    transform: translateY(-0.4rem); }
   .social--linkedin:hover {
     color: #0077B5;
-    transform: translateY(-0.2rem); }
+    transform: translateY(-0.4rem); }
   .social--twitter:hover {
     color: #1DA1F2;
-    transform: translateY(-0.2rem); }
+    transform: translateY(-0.4rem); }
   .social--facebook:hover {
     color: #4267B2;
-    transform: translateY(-0.2rem); }
+    transform: translateY(-0.4rem); }
 
 .card {
   text-align: center;
@@ -482,8 +483,7 @@ body {
   .portfolio__heading {
     font-size: 3rem;
     font-weight: 800;
-    color: #f7f7f7;
-    background-color: #af78fc;
+    color: #233142;
     text-align: center; }
   .portfolio__grid {
     display: grid;
