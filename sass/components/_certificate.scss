@@ -3,13 +3,13 @@
     text-align: center;
     height: 80vh;
     position: relative;
-    background-image: linear-gradient(rgba($color-grey-dark, .8), rgba($color-grey-dark-2, .9)), url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80");
+    background-image: linear-gradient(rgba($color-tertiary-1, .8), rgba($color-tertiary-2, .9)), url("/resources/sam-erwin-474207-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
    &__heading{
-        color: $color-grey-light-1;
+        color: $color-primary;
         text-transform: uppercase;
         font-size: 2.5rem;
         padding-bottom: 2rem;

@@ -1,7 +1,7 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom, rgba($color-grey-light-1, 0.7) 40%,rgba($color-grey-dark, 0.7) 60%), url("https://images.unsplash.com/photo-1508739826987-b79cd8b7da12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=966&q=80");
+    background-image: radial-gradient(rgba($color-tertiary-1, 0.99),rgba($color-tertiary-2, 0.85)), url("/resources/sam-erwin-474207-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,7 +9,7 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    color: $color-grey-dark-3;
+    color: $color-primary;
     
     &__header{
         display:flex;
