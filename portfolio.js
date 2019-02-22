@@ -29,10 +29,6 @@ const btnReturn = document.querySelector(".btn-return");
 const inputEmail= document.querySelector('#email');
 const inputMessage= document.querySelector('#message');
 
-//onload
-window.onload = function () {
-    window.scrolto(0,0);
-  }
 
 //**** */navBar**
 navIcon.addEventListener("click", ()=>{
