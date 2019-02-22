@@ -32,7 +32,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Muli", sans-serif;
   font-size: 62.5%;
   box-sizing: border-box; }
 
@@ -171,19 +171,16 @@ body {
         height: 20rem; } }
 
 .certificate-box {
-  padding-top: 5vh;
+  padding-top: 2vh;
   text-align: center;
   height: 80vh;
-  position: relative;
-  background-image: linear-gradient(rgba(228, 115, 79, 0.8), rgba(255, 226, 111, 0.9)), url("/resources/sam-erwin-474207-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
+  position: relative; }
   .certificate-box__heading {
-    color: #7E31ED;
+    color: #d1d1d1;
     text-transform: uppercase;
-    font-size: 2.5rem;
-    padding-bottom: 2rem; }
+    font-size: 2.4rem;
+    padding-bottom: 1rem;
+    font-weight: 800; }
 
 .certificates-list {
   height: 100%;
@@ -200,7 +197,8 @@ body {
     min-width: 290px;
     max-width: 540px;
     height: auto;
-    overflow: auto; }
+    overflow: auto;
+    box-shadow: 0px 0px 10px 15px rgba(35, 49, 66, 0.8); }
 
 .prev, .next {
   cursor: pointer;
@@ -208,7 +206,7 @@ body {
   bottom: 3.5%;
   width: 2rem;
   margin-top: -22px;
-  color: #7E31ED;
+  color: #ffe26f;
   font-weight: bold;
   font-size: 4rem;
   transition: 0.6s ease;
@@ -232,7 +230,8 @@ body {
       right: 5%; } }
 
 .prev:hover, .next:hover {
-  color: #974dff; }
+  color: #e4734f;
+  transform: scale(1.15); }
 
 .prev:active, .next:active {
   transform: scale(0.5); }
@@ -512,8 +511,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  color: #7E31ED; }
+  align-content: center; }
   .hero__header {
     display: flex;
     height: auto;
@@ -523,23 +521,33 @@ body {
     position: relative;
     z-index: 1000;
     margin: 0 auto;
-    filter: contrast(200%); }
+    color: #233142; }
     .hero__header > * {
       justify-self: center;
       align-self: center; }
 
 .heading-1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   opacity: 1; }
+  @media only screen and (min-width: 37.5em) {
+    .heading-1 {
+      font-size: 4rem;
+      padding: 1rem 0; } }
 
 .heading-2 {
-  font-size: 2rem;
+  font-size: 1.9rem;
   font-weight: 500;
   padding-bottom: 50px;
   text-align: center; }
+  @media only screen and (min-width: 37.5em) {
+    .heading-2 {
+      font-size: 2.6rem; } }
 
 .heading-3 {
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 500;
   padding-bottom: 4px; }
+  @media only screen and (min-width: 37.5em) {
+    .heading-3 {
+      font-size: 2.6rem; } }

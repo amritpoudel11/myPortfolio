@@ -1,18 +1,15 @@
 .certificate-box{
-    padding-top: 5vh;   
+    padding-top: 2vh;   
     text-align: center;
     height: 80vh;
     position: relative;
-    background-image: linear-gradient(rgba($color-tertiary-1, .8), rgba($color-tertiary-2, .9)), url("/resources/sam-erwin-474207-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
+    
    &__heading{
-        color: $color-primary;
+        color: $color-grey-light-2;
         text-transform: uppercase;
-        font-size: 2.5rem;
-        padding-bottom: 2rem;
+        font-size: 2.4rem;
+        padding-bottom: 1rem;
+        font-weight: 800;
    }
 }
 
@@ -35,6 +32,7 @@
         max-width: 540px;
         height: auto;
         overflow: auto;
+        box-shadow: 0px 0px 10px 15px rgba($color-secondary, .8);
   
     }
 }
@@ -44,7 +42,7 @@
     bottom: 3.5%;
     width: 2rem;
     margin-top: -22px;
-    color: $color-primary;
+    color: $color-tertiary-2;
     font-weight: bold;
     font-size: 4rem;
     transition: 0.6s ease;
@@ -70,7 +68,8 @@
     
   }
   .prev:hover, .next:hover{
-    color: $color-primary-light;
+    color: $color-tertiary-1;
+    transform: scale(1.15);
   }
   .prev:active, .next:active{
     transform: scale(.5);
