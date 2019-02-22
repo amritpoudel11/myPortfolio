@@ -92,7 +92,7 @@ body {
   font-size: 3.5rem;
   justify-content: center;
   align-content: center;
-  z-index: 4000; }
+  z-index: 990; }
   .social div a {
     color: inherit;
     text-decoration: none;
@@ -136,25 +136,25 @@ body {
     .card__description a {
       text-decoration: none; }
     .card__description--head {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-transform: capitalize;
       color: #7E31ED;
       background-color: #f7f7f7;
       border-bottom: 1px solid #974dff; }
       @media only screen and (min-width: 37.5em) {
         .card__description--head {
-          font-size: 1.7rem; } }
+          font-size: 2.2rem; } }
       @media only screen and (min-width: 75em) {
         .card__description--head {
           font-size: 2rem; } }
     .card__description--text {
       padding: .1rem;
       font-weight: 700;
-      font-size: 1.3rem;
+      font-size: 1.6rem;
       color: #f7f7f7; }
       @media only screen and (min-width: 37.5em) {
         .card__description--text {
-          font-size: 1.5rem; } }
+          font-size: 1.65rem; } }
       @media only screen and (min-width: 75em) {
         .card__description--text {
           font-size: 1.7rem; } }
@@ -167,8 +167,7 @@ body {
     border: 1px solid #974dff; }
     @media only screen and (min-width: 37.5em) {
       .card:hover .card__description {
-        font-size: 2rem;
-        height: 20rem; } }
+        height: 15rem; } }
 
 .certificate-box {
   padding-top: 2vh;
@@ -179,6 +178,7 @@ body {
     color: #d1d1d1;
     text-transform: uppercase;
     font-size: 2.4rem;
+    padding-top: 4rem;
     padding-bottom: 1rem;
     font-weight: 800; }
 
@@ -247,7 +247,7 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: rgba(228, 115, 79, 0.8);
+  background-color: rgba(153, 153, 153, 0.8);
   color: #233142;
   z-index: 1000; }
   .popUp__form {
@@ -257,7 +257,7 @@ body {
     transform: translate(-50%, -50%);
     width: 75%;
     height: 50rem;
-    background-color: #fff;
+    background-color: #f7f7f7;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     display: flex;
@@ -269,7 +269,7 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    color: #777;
+    color: #f7f7f7;
     font-weight: 800;
     font-size: 3rem;
     border-radius: 50%;
@@ -278,7 +278,7 @@ body {
     cursor: pointer; }
     .popUp__close:hover {
       transform: translate(2rem, -2rem) scale(1.3);
-      color: #999; }
+      color: #e4734f; }
 
 .form-inputs {
   width: 98%;

@@ -1,4 +1,4 @@
-
+//variables
 const navIcon = document.querySelector(".nav__icon");
 const navList = document.querySelector(".nav__list");
 const navImage = document.querySelector(".nav__img");
@@ -11,16 +11,37 @@ const footer = document.querySelector(".footer");
 const portfolio = document.querySelector(".portfolio");
 const home = document.querySelector("#Home");
 
+const homeLink = document.querySelector(".nav__list--home");
+const portfolioLink = document.querySelector(".nav__list--portfolio");
+const aboutLink = document.querySelector(".nav__list--about");
+const certificateLink = document.querySelector(".nav__list--certificate");
+
+const contactClick = document.querySelector(".click-contact");
+const popupClose = document.querySelectorAll(".popUp__close");
+const popUp = document.querySelector(".popUp");
+const popupForm = document.querySelector(".popUp__form");
+const navContact = document.querySelector(".nav__list--contact");
+
+const sendBtn = document.querySelector(".btn-message");
+const thankyou = document.querySelector(".thankyou");
+const btnReturn = document.querySelector(".btn-return");
+
+const inputEmail= document.querySelector('#email');
+const inputMessage= document.querySelector('#message');
+
+//onload
+window.onload = function () {
+    window.scrolto(0,0);
+  }
+
 //**** */navBar**
 navIcon.addEventListener("click", ()=>{
     navList.classList.toggle("toggle");
 });
 
-//navbar scroll Event
 window.onscroll =function(e){
 const scrolled = window.scrollY;
 const scrollAboutMe = document.documentElement.scrollHeight - (aboutMe.clientHeight + window.innerHeight + 40);
-
  if(scrolled >= scrollAboutMe){
      navIcon.style.color = "#b1b1b1";
      navImage.setAttribute('src', 'resources/logosilver.png');
@@ -29,8 +50,6 @@ const scrollAboutMe = document.documentElement.scrollHeight - (aboutMe.clientHei
     navIcon.style.color = "#7E31ED";
     navImage.setAttribute('src', 'resources/logopurple.png');
  }
-
- // hiding nav-header on scroll
 
 if(scrolled > 100){
     navHeader.style.color = "transparent";
@@ -45,11 +64,7 @@ btnHeader.addEventListener("click", function(){
     aboutMe.scrollIntoView();
 });
 
-// ** navigation link Area **
-const homeLink = document.querySelector(".nav__list--home");
-const portfolioLink = document.querySelector(".nav__list--portfolio");
-const aboutLink = document.querySelector(".nav__list--about");
-const certificateLink = document.querySelector(".nav__list--certificate");
+// ** navbar navigation link Area **
 
 homeLink.addEventListener("click", function(){
     home.scrollIntoView();
@@ -77,8 +92,6 @@ showSlides(slideIndex);
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
-
-
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("certificate");
@@ -91,21 +104,6 @@ function showSlides(n) {
 }
 
 //***popup message box */
-const contactClick = document.querySelector(".click-contact");
-const popupClose = document.querySelectorAll(".popUp__close");
-const popUp = document.querySelector(".popUp");
-const popupForm = document.querySelector(".popUp__form");
-const navContact = document.querySelector(".nav__list--contact");
-
-const sendBtn = document.querySelector(".btn-message");
-const thankyou = document.querySelector(".thankyou");
-const btnReturn = document.querySelector(".btn-return");
-
-const inputEmail= document.querySelector('#email');
-const inputMessage= document.querySelector('#message');
-
-
-
 contactClick.addEventListener("click", function(){
     popUp.style.display = "block";
 });
@@ -120,8 +118,6 @@ popupClose.forEach(function(e){
 })
 
 //form handling
-// check if form is valid
-
 sendBtn.addEventListener("click", function(){
     if(inputEmail.validity.valid && inputMessage.validity.valid){
     popupForm.style.display = "none";
