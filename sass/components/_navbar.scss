@@ -20,11 +20,10 @@
     }
     &__header{
         font-size: 2rem;
-        $color: $color-tertiary-1;
+        font-weight: 500;
         padding-left: 1rem;
-        transform: translateY(-.5rem);
         color:$color-primary;
-        transition: all 1s;
+        transition: all .5s;
         & h6{
             line-height: 1rem;
         }
