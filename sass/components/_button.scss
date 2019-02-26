@@ -18,6 +18,7 @@
         transition: all .3s;
         outline: 3px solid rgba($color-grey-light-1, .7);
         outline-offset: .5rem;
+        animation: buttonBlink .6s 3.6s 2 normal;
         
         &:hover{
             outline: 3px solid rgba($color-grey-light-1, .9);

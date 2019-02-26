@@ -32,7 +32,10 @@
 .heading-1{
     font-size: 3rem;
     font-weight: 600;
-    animation: appear .6s steps(10) 1 normal forwards;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 1s steps(40) 1.6s 1 normal both;
 
     @include respond(phone){
         font-size: 4rem;
@@ -44,7 +47,9 @@
     font-weight: 500;
     padding-bottom: 50px;
     text-align: center;
-    animation: appear .5s steps(10) 1 normal forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 1s steps(40) 2.6s 1 normal both;
     @include respond(phone){
         font-size: 2.6rem;
     }
@@ -54,14 +59,11 @@
     font-weight: 500;
     padding-bottom: 4px;
     padding-right: 5px;
+    text-align: center;
     white-space: nowrap;
-    animation: typewriter 4s steps(40) .6s 1 normal both,
-                blinking 500ms steps(40) infinite normal;
-    //animation: name duration timing-function delay iteration-count direction fill-mode;
     overflow: hidden;
-    
-
-    border-right: 1px solid rgba($color-secondary, 0.99);
+    animation: typewriter 1s steps(40) .6s 1 normal both;
+   
     @include respond(phone){
         font-size: 2.6rem;
     }
