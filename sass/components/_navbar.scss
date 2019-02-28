@@ -1,14 +1,18 @@
 .nav{
     position: fixed;
-    z-index: 5000;
+    z-index: 1100;
     width: 100%;
 
     &-left{
         display: flex; 
         justify-content: space-between; 
         align-items: center;
-       // border-bottom: 1px solid;   
-        padding: 1rem 1.4rem;  
+        padding: 1rem 1.4rem;
+        @include respond(tab-port){
+            display: inline-block;
+            float: left;
+            transform: translateY(15%);
+        }
     }
     &__logo{
         display: flex;
@@ -32,14 +36,22 @@
         font-size: 3rem;
         color: $color-primary;
         cursor: pointer;
+        @include respond(tab-port){
+            display: none;
+        }
     }
     &-right{
         font-size: 2rem;
         width: 130px;
         float: right;
         text-align: center;
-        align-self: center;        
-        
+        align-self: center;
+              
+        @include respond(tab-port){
+            display: inline;
+            width: max-content;
+            padding: 1rem 1.4rem;     
+        }
         &>ul>li{
             list-style: none; 
             font-weight: 600;
@@ -49,7 +61,28 @@
             background-color: $color-grey-dark-3;      
             color: $color-grey-light-1;
             cursor: pointer;
+            @include respond(tab-port){
+                font-size: 2rem;
+                color: $color-primary;
+                border: 1.4px solid $color-grey-dark-3;
+                background-color: $color-primary-light;
+                color: $color-grey-light-1;
+                padding: 1rem;
+                border-radius: 0 5px 0 5px;
+                &:hover{
+                    background-color: $color-primary;
+                }
+
+                &:not(:last-child){                   
+                    margin-right: .5em;                    
+                }              
+            }
            
+        }
+    }
+    &__list{
+        @include respond(tab-port){
+           float: right;
         }
     }
 }

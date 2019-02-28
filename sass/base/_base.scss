@@ -13,6 +13,9 @@ html{
 }
 .toggle{
     display: none;
+    @include respond(tab-port){
+        display: flex;
+    }
 }
 body{
     background-image: linear-gradient(rgba($color-secondary-light, 0.5),rgba($color-secondary, 0.8));

@@ -27,6 +27,7 @@
     &>.heading-2{
         padding-bottom: 0;
         font-weight: 800;
+        animation: none;
         @include respond(phone){
             font-size: 3rem;
         }

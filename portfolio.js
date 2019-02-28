@@ -37,15 +37,6 @@ navIcon.addEventListener("click", ()=>{
 
 window.onscroll =function(e){
 const scrolled = window.scrollY;
-const scrollAboutMe = document.documentElement.scrollHeight - (aboutMe.clientHeight + window.innerHeight + 40);
- if(scrolled >= scrollAboutMe){
-     navIcon.style.color = "#b1b1b1";
-     navImage.setAttribute('src', 'resources/logosilver.png');
- }
- else{
-    navIcon.style.color = "#7E31ED";
-    navImage.setAttribute('src', 'resources/logopurple.png');
- }
 
 if(scrolled > 100){
     navHeader.style.color = "transparent";
@@ -64,19 +55,27 @@ btnHeader.addEventListener("click", function(){
 
 homeLink.addEventListener("click", function(){
     home.scrollIntoView();
-   navList.classList.toggle("toggle");
+    if (window.matchMedia("max-width: 56.25em").matches) {
+     navList.classList.toggle("toggle");
+    }
 });
 portfolioLink.addEventListener("click", function(){
     portfolio.scrollIntoView();
-    navList.classList.toggle("toggle");
+    if (window.matchMedia("max-width: 56.25em").matches) {
+        navList.classList.toggle("toggle");
+       }
 });
 aboutLink.addEventListener("click", function(){
     aboutMe.scrollIntoView();
-    navList.classList.toggle("toggle");
+    if (window.matchMedia("max-width: 56.25em").matches) {
+        navList.classList.toggle("toggle");
+       }
 });
 certificateLink.addEventListener("click", function(){
     certificateBox.scrollIntoView();
-    navList.classList.toggle("toggle");
+    if (window.matchMedia("max-width: 56.25em").matches) {
+        navList.classList.toggle("toggle");
+       }
 });
 
 //*** Certificates****
@@ -105,7 +104,9 @@ contactClick.addEventListener("click", function(){
 });
 navContact.addEventListener("click", function(){
     popUp.style.display = "block";
-    navList.classList.toggle("toggle");
+    if (window.matchMedia("max-width: 56.25em").matches) {
+        navList.classList.toggle("toggle");
+       }
 });
 popupClose.forEach(function(e){
     e.addEventListener("click", function(){
