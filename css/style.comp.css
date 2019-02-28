@@ -60,6 +60,10 @@ html {
 .toggle {
   display: none; }
 
+@media only screen and (min-width: 56.25em) {
+  .toggle-menu {
+    display: flex; } }
+
 body {
   background-image: linear-gradient(rgba(63, 91, 124, 0.5), rgba(35, 49, 66, 0.8)); }
 
@@ -264,7 +268,7 @@ body {
   width: 100%;
   background-color: rgba(153, 153, 153, 0.8);
   color: #233142;
-  z-index: 1000; }
+  z-index: 2000; }
   .popUp__form {
     position: absolute;
     top: 50%;
@@ -328,13 +332,18 @@ body {
 
 .nav {
   position: fixed;
-  z-index: 5000;
+  z-index: 1100;
   width: 100%; }
   .nav-left {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.4rem; }
+    @media only screen and (min-width: 56.25em) {
+      .nav-left {
+        display: inline-block;
+        float: left;
+        transform: translateY(15%); } }
   .nav__logo {
     display: flex;
     text-decoration: none; }
@@ -353,12 +362,20 @@ body {
     font-size: 3rem;
     color: #7E31ED;
     cursor: pointer; }
+    @media only screen and (min-width: 56.25em) {
+      .nav__icon {
+        display: none; } }
   .nav-right {
     font-size: 2rem;
     width: 130px;
     float: right;
     text-align: center;
     align-self: center; }
+    @media only screen and (min-width: 56.25em) {
+      .nav-right {
+        display: flex;
+        width: max-content;
+        padding: 1rem 1.4rem; } }
     .nav-right > ul > li {
       list-style: none;
       font-weight: 600;
@@ -368,6 +385,22 @@ body {
       background-color: #333;
       color: #f7f7f7;
       cursor: pointer; }
+      @media only screen and (min-width: 56.25em) {
+        .nav-right > ul > li {
+          font-size: 2rem;
+          color: #7E31ED;
+          border: 1.4px solid #333;
+          background-color: #974dff;
+          color: #f7f7f7;
+          padding: 1rem;
+          border-radius: 0 5px 0 5px; }
+          .nav-right > ul > li:hover {
+            background-color: #7E31ED; }
+          .nav-right > ul > li:not(:last-child) {
+            margin-right: .5em; } }
+  @media only screen and (min-width: 56.25em) {
+    .nav__list {
+      float: right; } }
 
 .aboutMe {
   background-color: #233142;
@@ -393,7 +426,8 @@ body {
       padding: 3rem 2rem; } }
   .aboutMe > .heading-2 {
     padding-bottom: 0;
-    font-weight: 800; }
+    font-weight: 800;
+    animation: none; }
     @media only screen and (min-width: 37.5em) {
       .aboutMe > .heading-2 {
         font-size: 3rem; } }
@@ -534,7 +568,7 @@ body {
     justify-content: center;
     align-content: center;
     position: relative;
-    z-index: 1000;
+    z-index: 999;
     margin: 0 auto;
     color: #233142; }
     .hero__header > * {
