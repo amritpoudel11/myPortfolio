@@ -59,9 +59,10 @@ html {
 
 .toggle {
   display: none; }
-  @media only screen and (min-width: 56.25em) {
-    .toggle {
-      display: flex; } }
+
+@media only screen and (min-width: 56.25em) {
+  .toggle-menu {
+    display: flex; } }
 
 body {
   background-image: linear-gradient(rgba(63, 91, 124, 0.5), rgba(35, 49, 66, 0.8)); }
@@ -372,7 +373,7 @@ body {
     align-self: center; }
     @media only screen and (min-width: 56.25em) {
       .nav-right {
-        display: inline;
+        display: flex;
         width: max-content;
         padding: 1rem 1.4rem; } }
     .nav-right > ul > li {

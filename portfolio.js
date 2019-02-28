@@ -55,27 +55,19 @@ btnHeader.addEventListener("click", function(){
 
 homeLink.addEventListener("click", function(){
     home.scrollIntoView();
-    if (window.matchMedia("max-width: 56.25em").matches) {
-     navList.classList.toggle("toggle");
-    }
+    navList.classList.toggle("toggle");
 });
 portfolioLink.addEventListener("click", function(){
     portfolio.scrollIntoView();
-    if (window.matchMedia("max-width: 56.25em").matches) {
-        navList.classList.toggle("toggle");
-       }
+    navList.classList.toggle("toggle");
 });
 aboutLink.addEventListener("click", function(){
     aboutMe.scrollIntoView();
-    if (window.matchMedia("max-width: 56.25em").matches) {
-        navList.classList.toggle("toggle");
-       }
+    navList.classList.toggle("toggle");
 });
 certificateLink.addEventListener("click", function(){
     certificateBox.scrollIntoView();
-    if (window.matchMedia("max-width: 56.25em").matches) {
-        navList.classList.toggle("toggle");
-       }
+    navList.classList.toggle("toggle");
 });
 
 //*** Certificates****
@@ -104,9 +96,7 @@ contactClick.addEventListener("click", function(){
 });
 navContact.addEventListener("click", function(){
     popUp.style.display = "block";
-    if (window.matchMedia("max-width: 56.25em").matches) {
-        navList.classList.toggle("toggle");
-       }
+    navList.classList.toggle("toggle");
 });
 popupClose.forEach(function(e){
     e.addEventListener("click", function(){

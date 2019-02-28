@@ -48,7 +48,7 @@
         align-self: center;
               
         @include respond(tab-port){
-            display: inline;
+            display: flex;
             width: max-content;
             padding: 1rem 1.4rem;     
         }
