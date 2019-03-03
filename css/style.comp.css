@@ -366,6 +366,7 @@ body {
       .nav__icon {
         display: none; } }
   .nav-right {
+    display: none;
     font-size: 2rem;
     width: 130px;
     float: right;
