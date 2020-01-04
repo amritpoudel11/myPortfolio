@@ -1,111 +1,111 @@
-.aboutMe{
-    background-color: $color-secondary;
-    color: $color-grey-light-1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding: 2rem 1rem 1rem 1rem;
-    height: 100vh;
+.aboutMe {
+  background-color: $color-secondary;
+  color: $color-grey-light-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem 1rem 1rem 1rem;
+  height: 100vh;
+  min-height: max-content;
+  font-size: 1.5rem;
+  text-align: justify;
+  position: relative;
+
+  @include respond(phone) {
+    font-weight: 100;
+    line-height: 2rem;
+    padding: 0.5rem;
+  }
+  @include respond(tab-port) {
+    padding: 0.5rem;
+  }
+
+  & > .heading-2 {
+    padding-bottom: 0;
+    font-weight: 800;
+    font-size: 2rem !important;
     min-height: max-content;
-    font-size: 1.5rem;
-    text-align: justify;
-    position: relative;
-    
+    animation: none;
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
+  }
 
-    @include respond(phone){
-        font-size: 1.6rem;
-        font-weight: 100;
-        padding: 2rem;        
-        line-height: 3rem;
-    }
-    @include respond(tab-port){
-        
-        padding: 3rem 2rem;
-    }
-    
-    &>.heading-2{
-        padding-bottom: 0;
-        font-weight: 800;
-        animation: none;
-        @include respond(phone){
-            font-size: 3rem;
-        }
-    }
+  &__story {
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    overflow: auto;
 
-    &__story{
-        padding-top: 1.2rem;
+    @include respond(phone) {
+      & div p:not(:last-child) {
         padding-bottom: 2rem;
-        margin-left: 4rem;
-        margin-right: 4rem;
-
-        @include respond(phone){
-            & div p:not(:last-child){
-                padding-bottom: 2rem;
-            }
-        }
-        @include respond(tab-port){
-            & div{
-                padding-right: 5rem;
-            }
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-        
-        & div p span{
-            background-color: rgba($color-tertiary-2, .5);
-            font-weight: 400;
-        }
-        
+        font-size: small;
+      }
+    }
+    @include respond(tab-port) {
+      & div {
+        padding-right: 5rem;
+      }
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
     }
 
-    &__paras{
-        @include respond(tab-land){
-            font-size: 1.8rem;
-            & p:last-child{
-                padding-left: 10rem;
-            }
-            
-            display: flex;
-            justify-content: space-between;
-        }
+    & div p span {
+      background-color: rgba($color-tertiary-2, 0.5);
+      font-weight: 400;
     }
 
-    &__img--profile{
-        height: 14rem;
-        float: left;
-        margin-right: 1.5rem;        
-        border: 4px solid $color-grey-dark-2;
-        border-radius: 10%;
-        
-        @include respond(phone){
-            height: 24rem;
-        }
-        @include respond(tab-port){
-            width: 350px;
-            height: auto;
-            margin-right: 8rem;
-            
-        }
+    &--link {
+      color: white;
     }
+  }
 
-    &__contact{
-        position: relative;
-        bottom: 0;
-        left: 0;
-        height: 9vh;
-        width: 100%;
-        background-color: $color-primary-light;
-        text-align: center;
-        align-self: center;
-        padding-top: 1.5rem;
-        font-weight: 600;
-        & span{
-            display: inline-block;
-            
-        }
-        
+  &__paras {
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+      & p:last-child {
+        padding-left: 10rem;
+      }
+
+      display: flex;
+      justify-content: space-between;
     }
+  }
+
+  &__img--profile {
+    height: 14rem;
+    float: left;
+    margin-right: 1.5rem;
+    border: 4px solid $color-grey-dark-2;
+    border-radius: 10%;
+
+    @include respond(phone) {
+      height: 24rem;
+    }
+    @include respond(tab-port) {
+      width: 350px;
+      height: auto;
+      margin-right: 8rem;
+    }
+  }
+
+  &__contact {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 9vh;
+    width: 100%;
+    background-color: $color-primary-light;
+    text-align: center;
+    align-self: center;
+    padding-top: 1.5rem;
+    font-weight: 600;
+    & span {
+      display: inline-block;
+    }
+  }
 }
-

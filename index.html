@@ -2,252 +2,419 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="shortcut icon" type="image/png" href="resources/amrit-favicon.png">
-        <title>Amrit Poudel | Front End developer</title>
-        <meta name="description" content="A junior Front-End Developer based in Lisbon, Portugal. He developes responsive, cross-browser supporting UI and UX of web applications">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="resources/amrit-favicon.png"
+    />
+    <title>Amrit Poudel | Front End developer</title>
+    <meta
+      name="description"
+      content="A junior Front-End Developer based in Lisbon, Portugal. He developes responsive, cross-browser supporting UI and UX of web applications"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135122414-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-135122414-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-            gtag('config', 'UA-135122414-1');
-        </script>
+      gtag("config", "UA-135122414-1");
+    </script>
 
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,600" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body id="Home">
-        <div class="container">
-            <nav class="nav">
-                <div class="nav-left">
-                    <a href="#Home" class="nav__logo">
-                        <img src="resources/logopurple.png" alt="amrit logo" class="nav__img">
-                        <div class="nav__header">
-                            <h3>Amrit Poudel</h3>
-                            <h6>Front-End Developer</h6>
-                        </div>
-                    </a>
-                    <div class="nav__icon">
-                        <i class="fa fa-bars"></i>
-                    </div>
-                </div>
-                <div class="nav-right">
-                    <ul class="nav__list toggle-menu toggle">
-                        <li class="nav__list--home">Home</li>
-                        <li class="nav__list--portfolio">Portfolio</li>
-                        <li class="nav__list--about">About Me</li>                        
-                        <li class="nav__list--certificate">Certificates</li>
-                        <li class="nav__list--contact">Contact</li>
-                    </ul>
-                </div>
-            </nav>
-
-            <section class="hero">
-                <div id="particles-js"></div>
-                <header class="hero__header">
-                    <div class="header__background--animation"></div>
-                    <p class="heading-3">
-                        <span>H</span><span>E</span><span>L</span><span>L</span><span>O</span><span>!</span><span>&nbsp;</span><span>N</span><span>I</span><span>C</span><span>E</span><span>&nbsp;</span><span>T</span><span>O</span><span>&nbsp;</span><span>S</span><span>E</span><span>E</span><span>&nbsp;</span><span>Y</span><span>O</span><span>U</span><span>&nbsp;</span><span>H</span><span>E</span><span>R</span><span>E</span><span>!</span>
-                    </p>
-                    <h1 class="heading-1">I am Amrit Poudel</h1>
-                    <h2 class="heading-2">A web Developement Enthusiast</h2>
-                    <a class="btn btn-header" src="">About Me</a>          
-                </header>
-                <div class="social">
-                    <div class="social--github"><a href="https://github.com/amritpoudel11" target="_blank"><i class="fab fa-github-square"></i></a></div>
-                    <div class="social--linkedin"><a href="https://www.linkedin.com/in/amrit-poudel-29516944/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                    <div class="social--twitter"><a href="https://twitter.com/mounamrit" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
-                    <div class="social--facebook"><a href="https://www.facebook.com/mounamrit" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
-                </div>
-            </section>        
-            <section class="portfolio">
-                <h2 class="portfolio__heading">My Portfolio</h2>
-                <div class="portfolio__grid">
-                    <div class="card card-1">
-                        <img src="/resources/portfolio-screenshots/fccLisbon.PNG" alt="fcc lisbon landing page">
-                        <div class="card__description">
-                            <a href="https://www.freecodecamplisbon.org/" target="_blank">
-                                <h5 class="card__description--head">FreeCodeCamp-Lisbon Landing Page</h5>
-                                <p class="card__description--text">A team project in FreeCodeCamp-Lisbon</p>
-                                <p class="card__description--text">Tools: HTML, CSS, Bootstrap, Javascript, JQuery</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card card-2">
-                        <img src="/resources/portfolio-screenshots/natour.PNG" alt="natour tour landing page">
-                        <div class="card__description">
-                            <a href="https://travelsite-amrit.netlify.com/" target="_blank">
-                                <h5 class="card__description--head">Natour - A tavel web site</h5>
-                                <p class="card__description--text">for advanced css/sass course in Udemy by Jonas Schmedtmann</p>
-                                <p class="card__description--text">Tools: HTML, CSS, SASS/SCSS</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card card-3">
-                        <img src="/resources/portfolio-screenshots/nexter-amrit.PNG" alt="nexter project landing page">
-                        <div class="card__description">
-                            <a href="https://nexter-amrit.netlify.com/" target="_blank">
-                                <h5 class="card__description--head">Nexter - A Real estate business site</h5>
-                                <p class="card__description--text">for advanced css/sass course in Udemy by Jonas Schmedtmann</p>
-                                <p class="card__description--text">Tools: HTML, CSS, SASS/SCSS</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card card-4">
-                        <img src="/resources/portfolio-screenshots/randomQuote.PNG" alt="random quote generator">
-                        <div class="card__description">
-                            <a href="https://codepen.io/amritpoudel11/full/wmKmOO" target="_blank">
-                                <h5 class="card__description--head">Random Quote Generator</h5>
-                                <p class="card__description--text">for freecodecamp project</p>
-                                <p class="card__description--text">Tools: HTML, CSS, Javascript, JQuery</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card card-5">
-                        <img src="/resources/portfolio-screenshots/trillo-amrit.PNG" alt="trillo page">
-                        <div class="card__description">
-                            <a href="https://trillo-amrit.netlify.com/" target="_blank">
-                                <h5 class="card__description--head">Trillo-a hotel review page</h5>
-                                <p class="card__description--text">for advanced css/sass course in Udemy by Jonas Schmedtmann</p>
-                                <p class="card__description--text">Tools: HTML, CSS, SASS/SCSS</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="card card-6">
-                        <img src="/resources/portfolio-screenshots/wikiViewer.PNG" alt="wikipedia search and view app">
-                        <div class="card__description">
-                            <a href="https://codepen.io/amritpoudel11/full/LdjJNz" target="_blank">
-                                <h5 class="card__description--head">WikiViewer</h5>
-                                <p class="card__description--text">for FreeCodeCamp project</p>
-                                <p class="card__description--text">Tools: HTML, CSS, Javascript, JQuery</p>
-                            </a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section>
-            <section class="aboutMe">  
-                <h2 class="heading-2">About Me</h2>         
-                <div class="aboutMe__story">
-                    <img src="resources/profilePic2.jpg" alt="amrit poudel's photo" class="aboutMe__img--profile">
-                    <div class=>
-                        <p>
-                            Born in Nepal, a graduate in Environmental Science and a Resident in Portugal since 2010, 
-                            I found my interest inclined towards web app development at the end of 2017. Since then I started playing with HTML CSS and Javascript.
-                            I enjoy learning new technologies and have the aim of becoming an expert in Front-End Web Development.
-                        </p>
-                        <p>
-                            FreeCodeCamp, Udemy, Khan Academy, Scrimba, Medium, Youtube and lots of other Internet Sources are my Gurus in my mission. 
-                            Currently , I am looking for a company to grow with, in developing a better web world.            
-                            The tools I use in web Developement are:
-                            <span>HTML5</span>,
-                            <span>CSS3</span>,
-                            <span>SASS/SCSS</span>,
-                            <span>Javascript/ES6</span>,
-                            <span>React.js</span>,
-                            <span>Express.Js</span>,
-                            <span>MongoDB</span>,
-                            <span>Node.Js</span>,
-                            <span>JQuery</span>,
-                            <span>Bootstrap</span>, and always eager to learn new technologies.
-                        </p>
-                    </div>
-                </div>
-                    <button class="btn btn__contactMe click-contact">Contact Me</button>
-            </section>
-            <section class="certificate-box">           
-                <h2 class="certificate-box__heading">Some of my Certificates</h2>
-                <div class="certificates-list">
-                    <div class="certificate certificate-1 fade">
-                        <img src="/resources/certificates/fcc-responsive.PNG" alt="">
-                    </div>
-                    <div class="certificate certificate-2 fade">
-                        <img src="/resources/certificates/udemy-advanced-sass.jpg" alt="">
-                    </div>
-                    <div class="certificate certificate-3 fade"> 
-                        <img src="/resources/certificates/udemy-webdesign.jpg" alt="">
-                    </div>
-                    <div class="certificate certificate-4 fade">
-                        <img src="/resources/certificates/udemy-javascript.jpg" alt="">
-                    </div>
-                    <div class="certificate certificate-5 fade">
-                        <img src="/resources/certificates/sololearn-html.jpg" alt="sololearn Html certificate"> 
-                    </div>
-                    <div class="certificate certificate-6 fade">
-                        <img src="/resources/certificates/sololearn-css.jpg" alt="">
-                    </div>
-                    <div class="certificate certificate-7 fade">
-                        <img src="/resources/certificates/sololearn-javascript.jpg" alt="">
-                    </div>
-                    <div class="certificate certificate-8 fade">
-                        <img src="/resources/certificates/mangodbuni.PNG" alt="">
-                    </div>
-                    <div class="certificate certificate-9 fade">
-                        <img src="/resources/certificates/5dcc.PNG" alt="">
-                    </div>
-                                   
-                </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>  
-                 
-                
-            </section>
-            
-            <section class="footer"> 
-                <div class="footer__connection">
-                    <p>Let's Connect:</p>    
-                    <div class="social">
-                        <div class="social--github"><a href="https://github.com/amritpoudel11" target="_blank"><i class="fab fa-github-square"></i></a></div>
-                        <div class="social--linkedin"><a href="https://www.linkedin.com/in/amrit-poudel-29516944/" target="_blank"><i class="fab fa-linkedin"></i></a></div>
-                        <div class="social--twitter"><a href="https://twitter.com/mounamrit" target="_blank"><i class="fab fa-twitter-square"></i></a></div>
-                        <div class="social--facebook"><a href="https://www.facebook.com/mounamrit" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
-                    </div>
-                </div> 
-                <div class="footer__copy">
-                    <p>Background Image by Sam Erwin on Unsplash</p>
-                    <p>&copy; Amrit Poudel,  Lisbon, Portugal, 2019.</p>
-                </div>
-            </section>
-        </div>
-        <div class="popUp">
-            <form action="https://script.google.com/macros/s/AKfycbx3DZhxfMXbyCw2J05nMiVViC4TyM-v1DwchElb/exec" method="POST" class="popUp__form gform" id="contact-form">
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" placeholder="Your Email" class="form-inputs" id="email" required>
-                </p>
-                <p>
-                    <label for="message">Message:</label>
-                    <textarea name="message" rows="10" class="form-inputs" id="message" placeholder="your message ..." required></textarea>
-                </p>
-                <p>
-                    <button class="btn btn-message" type="submit">Send</button>
-                </p>
-                <span class="popUp__close">x</span>
-                
-            </form>
-            <div class="thankyou">
-                <h2>
-                    <em>Thank You!</em> Your Message is in my inbox!
-                </h2>
-                <h2>
-                    I will reply you as soon as possible. Have A good Day!
-                </h2>
-                <p class="btn btn-return">Return to Portfolio</p>
-                <span class="popUp__close">x</span>
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli:400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="Home">
+    <div class="container">
+      <nav class="nav">
+        <div class="nav-left">
+          <a href="#Home" class="nav__logo">
+            <img
+              src="resources/logopurple.png"
+              alt="amrit logo"
+              class="nav__img"
+            />
+            <div class="nav__header">
+              <h3>Amrit Poudel</h3>
+              <h6>Front-End Developer</h6>
             </div>
+          </a>
+          <div class="nav__icon">
+            <i class="fa fa-bars"></i>
+          </div>
         </div>
-        <script type="text/javascript" src="particleJs/particles.js"></script>
-        <script type="text/javascript" src="particleJs/app.js"></script>
-        <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
-        <script src="portfolio.js" async defer></script>
-    </body>
+        <div class="nav-right">
+          <ul class="nav__list toggle-menu toggle">
+            <li class="nav__list--home">Home</li>
+            <li class="nav__list--portfolio">Portfolio</li>
+            <li class="nav__list--about">About Me</li>
+            <li class="nav__list--certificate">Certificates</li>
+            <li class="nav__list--contact">Contact</li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div id="particles-js"></div>
+        <header class="hero__header">
+          <div class="header__background--animation"></div>
+          <p class="heading-3">
+            <span>H</span><span>E</span><span>L</span><span>L</span
+            ><span>O</span><span>!</span><span>&nbsp;</span><span>N</span
+            ><span>I</span><span>C</span><span>E</span><span>&nbsp;</span
+            ><span>T</span><span>O</span><span>&nbsp;</span><span>S</span
+            ><span>E</span><span>E</span><span>&nbsp;</span><span>Y</span
+            ><span>O</span><span>U</span><span>&nbsp;</span><span>H</span
+            ><span>E</span><span>R</span><span>E</span><span>!</span>
+          </p>
+          <h1 class="heading-1">I am Amrit Poudel</h1>
+          <h2 class="heading-2">A web Developement Enthusiast</h2>
+          <a class="btn btn-header" src="">About Me</a>
+        </header>
+        <div class="social">
+          <div class="social--github">
+            <a href="https://github.com/amritpoudel11" target="_blank"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </div>
+          <div class="social--linkedin">
+            <a
+              href="https://www.linkedin.com/in/amrit-poudel-29516944/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="social--twitter">
+            <a href="https://twitter.com/mounamrit" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </div>
+          <div class="social--facebook">
+            <a href="https://www.facebook.com/mounamrit" target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <h2 class="portfolio__heading">My Portfolio</h2>
+        <div class="portfolio__grid">
+          <div class="card card-1">
+            <img
+              src="/resources/portfolio-screenshots/fccLisbon.PNG"
+              alt="fcc lisbon landing page"
+            />
+            <div class="card__description">
+              <a href="https://www.freecodecamplisbon.org/" target="_blank">
+                <h5 class="card__description--head">
+                  FreeCodeCamp-Lisbon Landing Page
+                </h5>
+                <p class="card__description--text">
+                  A team project in FreeCodeCamp-Lisbon
+                </p>
+                <p class="card__description--text">
+                  Tools: HTML, CSS, Bootstrap, Javascript, JQuery
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="card card-2">
+            <img
+              src="/resources/portfolio-screenshots/natour.PNG"
+              alt="natour tour landing page"
+            />
+            <div class="card__description">
+              <a href="https://travelsite-amrit.netlify.com/" target="_blank">
+                <h5 class="card__description--head">
+                  Natour - A tavel web site
+                </h5>
+                <p class="card__description--text">
+                  for advanced css/sass course in Udemy by Jonas Schmedtmann
+                </p>
+                <p class="card__description--text">
+                  Tools: HTML, CSS, SASS/SCSS
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="card card-3">
+            <img
+              src="/resources/portfolio-screenshots/nexter-amrit.PNG"
+              alt="nexter project landing page"
+            />
+            <div class="card__description">
+              <a href="https://nexter-amrit.netlify.com/" target="_blank">
+                <h5 class="card__description--head">
+                  Nexter - A Real estate business site
+                </h5>
+                <p class="card__description--text">
+                  for advanced css/sass course in Udemy by Jonas Schmedtmann
+                </p>
+                <p class="card__description--text">
+                  Tools: HTML, CSS, SASS/SCSS
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="card card-4">
+            <img
+              src="/resources/portfolio-screenshots/randomQuote.PNG"
+              alt="random quote generator"
+            />
+            <div class="card__description">
+              <a
+                href="https://codepen.io/amritpoudel11/full/wmKmOO"
+                target="_blank"
+              >
+                <h5 class="card__description--head">Random Quote Generator</h5>
+                <p class="card__description--text">for freecodecamp project</p>
+                <p class="card__description--text">
+                  Tools: HTML, CSS, Javascript, JQuery
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="card card-5">
+            <img
+              src="/resources/portfolio-screenshots/trillo-amrit.PNG"
+              alt="trillo page"
+            />
+            <div class="card__description">
+              <a href="https://trillo-amrit.netlify.com/" target="_blank">
+                <h5 class="card__description--head">
+                  Trillo-a hotel review page
+                </h5>
+                <p class="card__description--text">
+                  for advanced css/sass course in Udemy by Jonas Schmedtmann
+                </p>
+                <p class="card__description--text">
+                  Tools: HTML, CSS, SASS/SCSS
+                </p>
+              </a>
+            </div>
+          </div>
+          <div class="card card-6">
+            <img
+              src="/resources/portfolio-screenshots/wikiViewer.PNG"
+              alt="wikipedia search and view app"
+            />
+            <div class="card__description">
+              <a
+                href="https://codepen.io/amritpoudel11/full/LdjJNz"
+                target="_blank"
+              >
+                <h5 class="card__description--head">WikiViewer</h5>
+                <p class="card__description--text">for FreeCodeCamp project</p>
+                <p class="card__description--text">
+                  Tools: HTML, CSS, Javascript, JQuery
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="aboutMe">
+        <h2 class="heading-2">About Me</h2>
+        <div class="aboutMe__story">
+          <img
+            src="resources/profilePic2.jpg"
+            alt="amrit poudel's photo"
+            class="aboutMe__img--profile"
+          />
+          <div class="abouMe__story--text">
+            <p>
+              Born in Nepal, a graduate in Environmental Science and now a
+              portuguese citizen,Amrit is building his own silk road to
+              self-development to develop himself to an asset to human society.
+              His Intrest in programming starts from the end of 2017, where he
+              started his journey by learning HTML, css and javascript through a
+              mobile application. It was in in the start of 2018, He comes to
+              know about
+              <a
+                class="aboutMe__story--link"
+                href="https://www.facebook.com/freeCodeCampLisbon/"
+                target="_blank"
+                >FreeCodeCamp-Lisbon</a
+              >, a community that meets every week to learn and share coding
+              knowledge. Since then the self learning path became stronger with
+              motivating people around him. He learned Full-stack web
+              development with Javascript everywhere paradigm with tools like:
+              HTML5, CSS3, SASS/SCSS, Javascript/ES6, React.js, Express.Js,
+              MongoDB, Node.Js, JQuery, Bootstrap.
+            </p>
+            <p>
+              In Septemper 2019, To fulfill his carrer needs and stand as a good
+              programmer, He joined a 14 week intensive and immersive
+              programming bootcamp in
+              <a
+                class="aboutMe__story--link"
+                href="https://www.codeforall.nl/"
+                target="_blank"
+                >Code For All_the Netherlands</a
+              >. There He learned Tools and concepts such as, Object-Oriented
+              Programming, Java, Git, Documentation and Code Conventions,
+              Network Programming, Concurrent Programming, Testing, Debugging,
+              Relational Database Management Systems, Java Database
+              Connectivity, Java Persistence, Spring Framework, Java Web
+              Programming and many more.
+            </p>
+            <p>
+              In 2020, Amrit is set to start his professional carrer with a
+              company to grow together and to make the human society richer with
+              awesome ideas and technologies.
+            </p>
+          </div>
+        </div>
+        <button class="btn btn__contactMe click-contact">Contact Me</button>
+      </section>
+      <section class="certificate-box">
+        <h2 class="certificate-box__heading">Some of my Certificates</h2>
+        <div class="certificates-list">
+          <div class="certificate certificate-1 fade">
+            <img src="/resources/certificates/fcc-responsive.PNG" alt="" />
+          </div>
+          <div class="certificate certificate-2 fade">
+            <img src="/resources/certificates/udemy-advanced-sass.jpg" alt="" />
+          </div>
+          <div class="certificate certificate-3 fade">
+            <img src="/resources/certificates/udemy-webdesign.jpg" alt="" />
+          </div>
+          <div class="certificate certificate-4 fade">
+            <img src="/resources/certificates/udemy-javascript.jpg" alt="" />
+          </div>
+          <div class="certificate certificate-5 fade">
+            <img
+              src="/resources/certificates/sololearn-html.jpg"
+              alt="sololearn Html certificate"
+            />
+          </div>
+          <div class="certificate certificate-6 fade">
+            <img src="/resources/certificates/sololearn-css.jpg" alt="" />
+          </div>
+          <div class="certificate certificate-7 fade">
+            <img
+              src="/resources/certificates/sololearn-javascript.jpg"
+              alt=""
+            />
+          </div>
+          <div class="certificate certificate-8 fade">
+            <img src="/resources/certificates/mangodbuni.PNG" alt="" />
+          </div>
+          <div class="certificate certificate-9 fade">
+            <img src="/resources/certificates/5dcc.PNG" alt="" />
+          </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </section>
+
+      <section class="footer">
+        <div class="footer__connection">
+          <p>Let's Connect:</p>
+          <div class="social">
+            <div class="social--github">
+              <a href="https://github.com/amritpoudel11" target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </div>
+            <div class="social--linkedin">
+              <a
+                href="https://www.linkedin.com/in/amrit-poudel-29516944/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <div class="social--twitter">
+              <a href="https://twitter.com/mounamrit" target="_blank"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+            </div>
+            <div class="social--facebook">
+              <a href="https://www.facebook.com/mounamrit" target="_blank"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copy">
+          <p>Background Image by Sam Erwin on Unsplash</p>
+          <p>&copy; Amrit Poudel, Lisbon, Portugal, 2019.</p>
+        </div>
+      </section>
+    </div>
+    <div class="popUp">
+      <form
+        action="https://script.google.com/macros/s/AKfycbx3DZhxfMXbyCw2J05nMiVViC4TyM-v1DwchElb/exec"
+        method="POST"
+        class="popUp__form gform"
+        id="contact-form"
+      >
+        <p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            class="form-inputs"
+            id="email"
+            required
+          />
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            rows="10"
+            class="form-inputs"
+            id="message"
+            placeholder="your message ..."
+            required
+          ></textarea>
+        </p>
+        <p>
+          <button class="btn btn-message" type="submit">Send</button>
+        </p>
+        <span class="popUp__close">x</span>
+      </form>
+      <div class="thankyou">
+        <h2><em>Thank You!</em> Your Message is in my inbox!</h2>
+        <h2>
+          I will reply you as soon as possible. Have A good Day!
+        </h2>
+        <p class="btn btn-return">Return to Portfolio</p>
+        <span class="popUp__close">x</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="particleJs/particles.js"></script>
+    <script type="text/javascript" src="particleJs/app.js"></script>
+    <script
+      data-cfasync="false"
+      type="text/javascript"
+      src="form-submission-handler.js"
+    ></script>
+    <script src="portfolio.js" async defer></script>
+  </body>
 </html>
