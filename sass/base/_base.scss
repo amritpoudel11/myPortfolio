@@ -1,24 +1,27 @@
-html{
-    scroll-behavior: smooth;      
-    font-family: $main-font;
-    font-size: 62.5%;      //1rem= 10px; 10px/16px= 62.5%;
-    box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+  font-family: $main-font;
+  font-size: 62.5%; //1rem= 10px; 10px/16px= 62.5%;
+  box-sizing: border-box;
 }
 *,
 *::after,
-*::before{
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-.toggle{
-    display: none;
+.toggle {
+  display: none;
 }
-@include respond(tab-port){
-    .toggle-menu{
-        display:flex
-    }
+@include respond(tab-port) {
+  .toggle-menu {
+    display: flex;
+  }
 }
-body{
-    background-image: linear-gradient(rgba($color-secondary-light, 0.5),rgba($color-secondary, 0.8));
+body {
+  background-image: linear-gradient(
+    rgba($color-secondary-light, 0.5),
+    rgba($color-secondary, 0.8)
+  );
 }
